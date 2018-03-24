@@ -1,0 +1,186 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{00}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{{\tt DOI:}\penalty0{#1}\ }
+  \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
+
+\bibitem[\protect\citeauthoryear{Aitor Garc\'{i}a-Pablos}{Aitor
+  Garc\'{i}a-Pablos}{2017}]%
+        {Cuadros17}
+{German~Rigau Aitor Garc\'{i}a-Pablos, Montse~Cuadros}. 2017.
+\newblock \showarticletitle{W2VLDA: Almost unsupervised system for Aspect Based
+  Sentiment Analysis}.
+\newblock {\em Expert Systems With Applications\/}  {91} (Sept. 2017),
+  127--137.
+\newblock
+\showURL{%
+\url{http://dx.doi.org/10.1016/j.eswa.2017.08.049}}
+
+
+\bibitem[\protect\citeauthoryear{{Alexandros Baltas and Andreas Kanavos and
+  Athanasios K. Tsakalidis}}{{Alexandros Baltas and Andreas Kanavos and
+  Athanasios K. Tsakalidis}}{2017}]%
+        {Baltas17}
+{{Alexandros Baltas and Andreas Kanavos and Athanasios K. Tsakalidis}}. 2017.
+\newblock \showarticletitle{An Apache Spark Implementation for Sentiment
+  Analysis on Twitter Data}.
+\newblock  (Aug. 2017), 15--25.
+\newblock
+\showDOI{%
+\url{http://dx.doi.org/10.1007/978-3-319-57045-7_2}}
+
+
+\bibitem[\protect\citeauthoryear{Alm, Roth, and Sproat}{Alm
+  et~al\mbox{.}}{2005}]%
+        {Alm05}
+{Cecilia~Ovesdotter Alm}, {Dan Roth}, {and} {Richard Sproat}. 2005.
+\newblock \showarticletitle{Emotions from text machine learning for text-based
+  emotion prediction}.
+\newblock  (10 2005), 579--586.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Apoorv, Xie, Vovsha, Rambow, and
+  Passonneau}{Apoorv et~al\mbox{.}}{2011}]%
+        {Rebecca11}
+{Agarwal Apoorv}, {Boyi Xie}, {Ilia Vovsha}, {Owen Rambow}, {and} {Rebecca
+  Passonneau}. 2011.
+\newblock \showarticletitle{Sentiment Analysis of Twitter Data}.
+\newblock  (2011), 30--38.
+\newblock
+\showISBNx{978-1-932432-96-1}
+\showURL{%
+\url{http://dl.acm.org/citation.cfm?id=2021109.2021114}}
+
+
+\bibitem[\protect\citeauthoryear{{Bin Lin and Fiorella Zampetti and Gabriele
+  Bavota and Massimiliano Di Penta and Michele Lanza, and Rocco Oliveto}}{{Bin
+  Lin and Fiorella Zampetti and Gabriele Bavota and Massimiliano Di Penta and
+  Michele Lanza, and Rocco Oliveto}}{2018}]%
+        {Lin18}
+{{Bin Lin and Fiorella Zampetti and Gabriele Bavota and Massimiliano Di Penta
+  and Michele Lanza, and Rocco Oliveto}}. 2018.
+\newblock \showarticletitle{{Sentiment Analysis for Software Engineering: How
+  Far Can We Go ?}}
+\newblock  (2018), {1--11}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Gupta, Negi, Vishwakarma, Rawat, and
+  Badhani}{Gupta et~al\mbox{.}}{2017}]%
+        {Badhani17}
+{Bhumika Gupta}, {Monika Negi}, {Kanika Vishwakarma}, {Goldi Rawat}, {and}
+  {Priyanka Badhani}. 2017.
+\newblock \showarticletitle{Study of Twitter Sentiment Analysis using Machine
+  Learning Algorithms on Python}.
+\newblock {\em International Journal of Computer Applications\/} {165}, 9 (May
+  2017), 29--34.
+\newblock
+\showISSN{0975-8887}
+\showDOI{%
+\url{http://dx.doi.org/10.5120/ijca2017914022}}
+
+
+\bibitem[\protect\citeauthoryear{{Hardik Meisheri and Rupsa Saha and Priyanka
+  Sinha and Lipika Dey}}{{Hardik Meisheri and Rupsa Saha and Priyanka Sinha and
+  Lipika Dey}}{2017}]%
+        {Meisheri17}
+{{Hardik Meisheri and Rupsa Saha and Priyanka Sinha and Lipika Dey}}. 2017.
+\newblock \showarticletitle{{A Deep Learning Approach to Sentiment Intensity
+  Scoring of English Tweets}}.
+\newblock {\em Proceedings of the 8th Workshop on Computational Approaches to
+  Subjectivity, Sentiment and Social Media Analysis\/} {8}, 7 (Sept. 2017),
+  193--199.
+\newblock
+\showDOI{%
+\url{http://dx.doi.org/10.1038/s41598-018-20132-7}}
+
+
+\bibitem[\protect\citeauthoryear{\"{O}zt\"{u}rka and Ayvazb}{\"{O}zt\"{u}rka
+  and Ayvazb}{2017}]%
+        {Ayvazb17}
+{Nazan \"{O}zt\"{u}rka} {and} {Serkan Ayvazb}. 2017.
+\newblock \showarticletitle{Sentiment analysis on Twitter: A text mining
+  approach to the Syrian refugee crisis}.
+\newblock {\em Telematics and Informatics\/}  {35} (Oct. 2017), 136--147.
+\newblock
+\showDOI{%
+\url{http://dx.doi.org/10.1016/j.procs.2017.12.044}}
+
+
+\bibitem[\protect\citeauthoryear{{Themis Palpanas and Mikalai
+  Tsytsarau}}{{Themis Palpanas and Mikalai Tsytsarau}}{2011}]%
+        {Palpanas11}
+{{Themis Palpanas and Mikalai Tsytsarau}}. 2011.
+\newblock \showarticletitle{Survey on mining subjective data on the web}.
+\newblock {\em Expert Systems With Applications\/} 24 (Oct. 2011), 478--514.
+\newblock
+\showDOI{%
+\url{http://dx.doi.org/10.1007/s10618-011-0238-6}}
+
+
+\bibitem[\protect\citeauthoryear{Vyasa and V.Umab}{Vyasa and V.Umab}{2017}]%
+        {Vyas17}
+{Vishal Vyasa} {and} {V.Umab}. 2017.
+\newblock \showarticletitle{An Extensive study of Sentiment Analysis tools and
+  Binary}.
+\newblock {\em Procedia Computer Science\/}  {125} (Dec. 2017), 193--199.
+\newblock
+\showDOI{%
+\url{http://dx.doi.org/10.1016/j.procs.2017.12.044}}
+
+
+\bibitem[\protect\citeauthoryear{{Walaa Medhat and Ahmed Hassan and Hoda
+  Korashy}}{{Walaa Medhat and Ahmed Hassan and Hoda Korashy}}{2014}]%
+        {Medhat14}
+{{Walaa Medhat and Ahmed Hassan and Hoda Korashy}}. {2014}.
+\newblock \showarticletitle{{Sentiment analysis algorithms and applications: A
+  survey}}.
+\newblock {\em {Ain Shams Engineering Journal}\/} {5}, 4 ({2014}),
+  {1093--1113}.
+\newblock
+\showDOI{%
+\url{http://dx.doi.org/{10.1016/j.asej.2014.04.011}}}
+
+
+\bibitem[\protect\citeauthoryear{{Zhao Jianqiang and Gui Xiaolin}}{{Zhao
+  Jianqiang and Gui Xiaolin}}{2017}]%
+        {Jianqiang17}
+{{Zhao Jianqiang and Gui Xiaolin}}. 2017.
+\newblock \showarticletitle{Comparison Research on Text Pre-processing Methods
+  on Twitter Sentiment Analysis}.
+\newblock {\em IEEE Access\/}  {5} (Feb. 2017), 2870--2879.
+\newblock
+\showDOI{%
+\url{http://dx.doi.org/10.1109/ACCESS.2017.2672677}}
+
+
+\end{thebibliography}

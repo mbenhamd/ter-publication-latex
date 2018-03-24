@@ -1,0 +1,20 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.3}{Related Work}{}% 2
+\BOOKMARK [1][-]{section.4}{Cloud computing}{}% 3
+\BOOKMARK [2][-]{subsection.5}{MapReduce Model and Spark Framework}{section.4}% 4
+\BOOKMARK [1][-]{section.6}{Methodology}{}% 5
+\BOOKMARK [2][-]{subsection.11}{Pre-processing}{section.6}% 6
+\BOOKMARK [2][-]{subsection.12}{Machine learning for Emotion and Sentiment classification}{section.6}% 7
+\BOOKMARK [2][-]{subsection.13}{Feature Generation}{section.6}% 8
+\BOOKMARK [1][-]{section.14}{Implementation}{}% 9
+\BOOKMARK [1][-]{section.15}{Web application}{}% 10
+\BOOKMARK [2][-]{subsection.16}{Conception of the DataBase \(Web Site\)}{section.15}% 11
+\BOOKMARK [2][-]{subsection.20}{Conception of the Archive Access}{section.15}% 12
+\BOOKMARK [2][-]{subsection.23}{Conception of the Real Stream}{section.15}% 13
+\BOOKMARK [1][-]{section.27}{Results}{}% 14
+\BOOKMARK [2][-]{subsection.28}{English tweets monthly analyzed}{section.27}% 15
+\BOOKMARK [2][-]{subsection.31}{Psychological profile for any users}{section.27}% 16
+\BOOKMARK [2][-]{subsection.34}{Impacts of tweets}{section.27}% 17
+\BOOKMARK [1][-]{section.37}{Discussion}{}% 18
+\BOOKMARK [1][-]{section.42}{Conclusion and Future Work}{}% 19
+\BOOKMARK [1][-]{section.44}{References}{}% 20

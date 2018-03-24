@@ -1,2 +1,2 @@
-# database-publication-latex
-Publication for the Twitter Sentiment Analysis Project
+# ter-publication-latex
+Publication du TER

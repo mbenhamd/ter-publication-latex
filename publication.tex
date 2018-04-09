@@ -1,315 +1,794 @@
-\documentclass{acmtog} % V1.2
+% v2-acmlarge-sample.tex, dated March 6 2012
+% This is a sample file for ACM large trim journals
+%
+% Compilation using 'acmlarge.cls' - version 1.3, Aptara Inc.
+% (c) 2011 Association for Computing Machinery (ACM)
+%
+% Questions/Suggestions/Feedback should be addressed to => "acmtexsupport@aptaracorp.com".
+% Users can also go through the FAQs available on the journal's submission webpage.
+%
+% Steps to compile: latex, bibtex, latex latex
+%
+\documentclass[prodmode,acmtap]{acmlarge}
 
-\usepackage[hypertexnames=false, pdftex]{hyperref}
-\hypersetup{ colorlinks = true, linkcolor = black, urlcolor = blue, citecolor = blue }
-\usepackage{float}
-\let\oldquote\quote
-\let\endoldquote\endquote
-\renewenvironment{quote}[2][]
-  {\if\relax\detokenize{#1}\relax
-     \def\quoteauthor{#2}%
-   \else
-     \def\quoteauthor{#2~---~#1}%
-   \fi
-   \oldquote}
-  {\par\nobreak\smallskip\hfill(\quoteauthor)%
-   \endoldquote\addvspace{\bigskipamount}}
+% Metadata Information
+\acmVolume{2}
+\acmNumber{3}
+\acmArticle{1}
+\articleSeq{1}
+\acmYear{2010}
+\acmMonth{5}
 
-\acmVolume{1}
-\acmNumber{1}
-\acmYear{2018}
-\acmMonth{March}
-\acmArticleNum{1}
-\makeatletter
-\def\runningfoot{\def\@runningfoot{}}
-\def\firstfoot{\def\@firstfoot{}}
-\makeatother
+% Package to generate and customize Algorithm as per ACM style
+\usepackage[ruled]{algorithm2e}
+\SetAlFnt{\algofont}
+\SetAlCapFnt{\algofont}
+\SetAlCapNameFnt{\algofont}
+\SetAlCapHSkip{0pt}
+\IncMargin{-\parindent}
+\renewcommand{\algorithmcfname}{ALGORITHM}
 
+% Page heads
+\markboth{M. Ben Hamdoune, Y. Tannier}{Factorisation matricielle non-negative et classification d’images}
+
+% Title portion
+\title{Factorisation matricielle non-n\'egative et classification d\\’images}
+\author{MOHAMED BEN HAMDOUNE et YANNIS TANNIER \affil{Universit\'e Paris-Descartes}
+}
+% NOTE! Affiliations placed here should be for the institution where the
+%       BULK of the research was done. If the author has gone to a new
+%       institution, before publication, the (above) affiliation should NOT be changed.
+%       The authors 'current' address may be given in the "Author's addresses:" block (below).
+%       So for example, Mr. Fogarty, the bulk of the research was done at UIUC, and he is
+%       currently affiliated with NASA.
+
+\begin{abstract}
+It has been previously proposed that understanding the mechanisms of
+contour perception can provide a theory for why some flow-rendering
+methods allow for better judgments of advection pathways than others.
+In the present article, we develop this theory through a numerical
+model of the primary visual cortex of the brain (Visual Area 1) where
+contour enhancement is understood to occur according to most
+neurological theories. We apply a two-stage model of contour
+perception to various visual representations of flow fields evaluated
+using the advection task of Laidlaw et al. [2001]. In the first
+stage, contour {enhancement} is modeled based on Li's cortical model
+[Li 1998]. In the second stage, a model of streamline {tracing} is
+proposed, designed to support the advection task. We examine the
+predictive power of the model by comparing its performance to that of
+human subjects on the advection task with four different
+visualizations. The results show the same overall pattern for humans
+and the model. In both cases, the best performance was obtained with
+an aligned streamline-based method, which tied with a LIC-based
+method. Using a regular or jittered grid of arrows produced worse
+results. The model yields insights into the relative strengths of
+different flow visualization methods for the task of visualizing
+advection pathways.
+\end{abstract}
+
+\category{H.5.2}{Information Interfaces and Presentation}{User
+Interfaces}[Evaluation/\break methodology]
+\category{H.1.2}{Models and Principles}{User/Machine Systems}[Human Information Processing]
+\category{I.5.1}{Pattern\break Recognition}{Models}[Neural Nets]
+
+\terms{Human Factors}
+\keywords{Contour perception, flow visualization, perceptual theory, visual cortex, visualization}
+
+\acmformat{Mohamed Ben Hamdoune, Yannis Tannier. 2018. Neural Modeling of Flow Rendering Effectiveness.}
+% At a minimum you need to supply the author names, year and a title.
+% IMPORTANT:
+% Full first names whenever they are known, surname last, followed by a period.
+% In the case of two authors, 'and' is placed between them.
+% In the case of three or more authors, the serial comma is used, that is, all author names
+% except the last one but including the penultimate author's name are followed by a comma,
+% and then 'and' is placed before the final author's name.
+% If only first and middle initials are known, then each initial
+% is followed by a period and they are separated by a space.
+% The remaining information (journal title, volume, article number, date, etc.) is 'auto-generated'.
 
 \begin{document}
 
-\markboth{Experimental Sentiment Analysis on Twitter}{A Real Time Stream and Big Data Process}
-
-\title{Sentiment Analysis on Twitter : Effects in a Social Network} % title
-
-\author{Mohamed Ben Hamdoune {\upshape and} Yannis Tannier
-\affil{University of Paris-Descartes}
-}
-
-\category{H.2.8}{Database Applications}{Big Data and Real Stream}[Cloud Computing]
-\category{I.3.7}{Learning}{Apache Spark and Hadoop}[Social Media Analytics]
-
-\terms{Twitter, Psychological Profile}
-
-\keywords{Data Mining, Natural Languages Processing, Sentiment Analysis, Classification, Text Mining}
-
-\acmformat{Mohamed Ben Hamdoune, Yannis Tannier. 2018. Sentiment Analysis for Twitter : Effects in a Social Network.}
-
-\maketitle
-
 \begin{bottomstuff}
-Jason Scott Sadofsky acknowledges a Jason Scott, is an American archivist, historian of technology, and film-maker. Archive Team is a group dedicated to preserving digital history that was founded by Jason Scott in 2009. Data was collected from the website of The Archive Team.
-
+This work is supported by the Widget Corporation Grant \#312-001.\\
+Author's address: D. Pineo, Kingsbury Hall, 33 Academic Way, Durham,
+N.H. 03824; email: dspineo@comcast.net; Colin Ware, Jere A. Chase
+Ocean Engineering Lab, 24 Colovos Road, Durham, NH 03824; email: cware@ccom.unh.edu;
+Sean Fogarty, (Current address) NASA Ames Research Center, Moffett Field, California 94035.
 \end{bottomstuff}
 
 
-\begin{abstract}
+\maketitle
 
-Our purpose is to build a powerful platform for real-time data analysis of tweets on twitter trends. We also want to analyse all the tweets of 2017 based on a downloaded sample of data (average of 6 To). All this data analysis will be accessible via a web interface that will be developed. We want to build a powerful system of sentiments analysis by making a database structure of tweets which is relevant about impacts and effects. The system should provide a faster way to execute Machine Learning methodologies behind data extracted from Twitter. Analysis news actuality by getting an analysis on actual trends with real stream data by building an efficient web interface to get results easily and build a system without false accounts and keep a control on data continuously.
-\end{abstract}
-
+% Head 1
 \section{Introduction}
 
-The main subject is Sentiment Analysis on Twitter\footnote{\url{https://twitter.yannistannier.io/#/dashboard}}, a microblogging platform where people can easily share their thought on anything and their habits too. We have a lot of publications on sentiment analysis but not so much research about impacts and their effect on society. The maximum characters are 140 which can be a good thing for the process of analysis because it will make it faster in a way to perform on small messages but in the other hand we should pay attention on accuracy of results. Even it’s an enormously continuous stream of data, Twitter is a good extra sentiment though an online community. Therefore, how to optimize all this streaming data and build a web interface for users who want to get data. We will use in our project will use many methodologies from Machine Learning like unsupervised methods to make a classification of sentiments, and supervised method to predicate psychological profile. Finally, one big step will be and efficient system about control of massive data incoming, a check on false account and spam messages that will destroy our results for example.
- 
-\begin{quote}{Jeffrey Zeldman}
-“The best way to engage honestly with the marketplace via Twitter is to never use the words "engage," "honesty," or "marketplace." 
+Many techniques for 2D flow visualization have been developed and
+applied. These include grids of little arrows, still the most common
+for many applications, equally spaced streamlines
+\cite{Turk1996,Jobard1997}, and line integral convolution (LIC)
+\cite{Cabral1993}. But which is best and why? \citeN{Laidlaw2001}
+showed that the ``which is best'' question can be answered by means
+of user studies in which participants are asked to carry out tasks
+such as tracing advection pathways or finding critical points in the
+flow field. (Note: An advection pathway is the same as a streamline
+in a steady flow field.) \citeN{Ware2008} proposed that the ``why''
+question may be answered through the application of recent theories
+of the way contours in the environment are processed in the visual
+cortex of the brain. But Ware only provided a descriptive sketch
+with minimal detail and no formal expression. In the present paper,
+we show, through a numerical model of neural processing in the
+cortex, how the theory predicts which methods will be best for an
+advection path tracing task.
+
+% Head 2
+\subsection{The IBQ Approach in Image Quality Estimation}
+
+The IBQ approach combined with psychometric methods has proven suitable,
+especially for testing the performance of imaging devices or their
+components and then returning this quality information to the product
+development or evaluation stages. When the subjective changes in image
+quality are multivariate, the technical parameters changing in the test
+image are unknown or difficult to compute. However, the IBQ approach can be
+used to determine the subjectively important quality dimensions with a wide
+range of natural image material related to changes caused by different
+devices or their components. In order to tune the image-processing
+components for optimal performance, it is important to know what the
+subjectively crucial characteristics that change in the perceived image
+quality are as a function of the tuning parameters, or simply for different
+components. Table I describes the problems caused by multivariate changes in
+image quality and offers suggestions of how to approach them by using
+different measurement methods that complement each other. The IBQ approach
+can complement the psychometric approaches and objective measurements by
+defining the subjective meaning of image quality attributes and
+characteristics; in other words, it reveals how important they are for the
+overall perceived quality. This information can then be used as guidance in
+tuning, and no complex models are needed in order to understand the relation
+between objective measures and subjective quality ratings.
+
+% Table
+\begin{table}[t]
+\tbl{Multivariate Changes in Image Quality Attributes, the Relationship
+of Psychometric and Objective Image Quality Estimations and the IBQ Approach}{%
+\begin{tabular}{|l|p{8pc}|p{8pc}|p{12pc}|}
+\hline
+~PROBLEM   & \multicolumn{3}{l|}{{Estimating the performance when image
+                                quality changes are multivariate}}\\\hline
+{APPROACH} & {Objective measurements}    & \multicolumn{2}{|{c}|}{Subjective measurements}\\\cline{3-4}
+           &                             & IBQ approach          & Psychometric approach\\\hline
+GOAL       & Objective and computational
+             measures for describing the
+             changes in the images       & Definition of
+                                           subjectively
+                                           crucial image quality
+                                           characteristics       & The amount of
+                                                                   change in either
+                                                                   the overall quality
+                                                                   or a single attribute\\\hline
+QUESTION   & What changes physically?    & What matters for the
+                                           observer?             & How big is the perceived
+                                                                   change?\\\hline
+\end{tabular}}
+\begin{tabnote}
+The IBQ approach can help to determine the subjectively crucial
+characteristics of an image and therefore to give weights to objective and
+computational measures.
+\end{tabnote}
+\label{tab1}
+\end{table}
+
+
+Our basic rational is as follows. Tracing an advection pathway for a
+particle dropped in a flow field is a perceptual task that can be
+carried out with the aid of a visual representation of the flow.
+The task requires that an individual attempts to trace a continuous
+contour from some designated starting point in the flow until some
+terminating condition is realized. This terminating condition might
+be the edge of the flow field or the crossing of some designated
+boundary. If we can produce a neurologically plausible model of
+contour perception then this may be the basis of a rigorous theory of
+flow visualization efficiency.
+% description
+\begin{description}
+    \item[Identify] Characteristics of an object.
+    \item[Locate] Absolute or relative position.
+    \item[Distinguish] Recognize as the same or different.
+    \item[Categorize] Classify according to some property (e.g.,  color, position, or shape).
+    \item[Cluster] Group same or related objects together.
+    \item[Distribution] Describe the overall pattern.
+    \item[Rank] Order objects of like types.
+    \item[Compare] Evaluate different objects with each other.
+    \item[Associate] Join in a relationship.
+    \item[Correlate] A direct connection.
+\end{description}
+
+\subsection{Conditions}
+The reproduction of the gestures was performed in the presence or
+absence of visual and auditory feedback, resulting in four (2 $\times$ 2) conditions.
+% enumerate
+\begin{enumerate}
+\item Visual and auditory feedback (V\,$+$\,A).
+\item Visual feedback, no auditory feedback (V).
+\item Auditory feedback, no visual feedback (A).
+\item No visual or auditory feedback (None).
+\end{enumerate}
+The order of the four conditions was randomized across participants.
+% itemize
+\begin{itemize}
+    \item \textit{when} $+$ \textit{where} $\Rightarrow$
+          \textit{what}: State the properties of an object or objects at a
+          certain ~time, or set of times,  and a certain place, or set of places.
+    \item \textit{when} $+$ \textit{what} $\Rightarrow$
+          \textit{where}: State the location or set of locations.
+    \item \textit{where} $+$ \textit{what} $\Rightarrow$
+          \textit{when}: State the time or set of times.
+\end{itemize}
+When conducting a user study, the goal for the study is to measure
+the suitability of the visualization in some sense. What is actually
+measured is a fundamental question that we believe can be handled by
+using the concepts of {effectiveness}, {efficiency},
+and {satisfaction}. These three concepts are derived from the
+ISO standard of usability 9241-11.
+% quote
+\begin{quote}
+    Extent to which a product can be used by specified users to
+    achieve specified goals with \textit{effectiveness},
+    \textit{efficiency}, and \textit{satisfaction} in a specified context of use.
 \end{quote}
 
-In this study, we introduce to the readers, a problem of Data Processing and Cloud Computation, which have been rapidly a trend over the last decade. 
+The mechanisms of contour perception have been studied by
+psychologists for at least 80 years, starting with the Gestalt
+psychologists. A major breakthrough occurred with the work of Hubel
+and Wiesel \citeyear{Hubel1962,Hubel1968} and from that time,
+neurological theories of contour perception developed. In this
+article, we show that a model of neural processing in the visual
+cortex  can be used to predict which flow representation methods will
+be better. Our model has two stages. The first is a contour
+enhancement model. Contour enhancement is achieved through lateral
+connections between nearby local edge detectors. This produces a
+neural map in which continuous contours have an enhanced
+representation. The model or cortical processing we chose to apply is
+adapted from \citeN{Li1998a}. The second stage is a contour
+integration model. This represents a higher level cognitive process
+whereby a pathway is traced.
+% Enunciations
+\begin{theorem}
+For a video sequence of $n$ frames, an optimal approach based on
+dynamic programming can retrieve all levels of key frames together
+with their temporal boundaries in O($n^4$) times.
+\end{theorem}
 
-\section{Related Work}
-\label{sec:related_work}
-It’s 2017, the people of the world generate 2.5 million terabytes of information a day. 500 million tweets, 1.8 billion pieces of shared information on Facebook, each and every day. These snippets of information regard anything under the sun; from what the user had for lunch, to their disgust over a referee in a football match. Twitter specifically has become known as a location where news is quickly disseminated in a concise format. When regarding a financial commodity, the public confidence in a particular commodity is a core base of its value. Social media has served as platform to express opinions since their inception, and as such tapping into the open APIs provided of the likes of Facebook and Twitter, these arguably biased pieces of information become available with a sea of meta-data.
-To begin, ye can refer to this article \cite{Palpanas11} because we can relate that it is a point of start, it gives us a theoretical review on the development of Sentiment Analysis. The interested reader can also refer to previous surveys in the area, like \cite{Ayvazb17} for their data process about tweets in Turkish and English  because most of free API have their functionnality in English. We also base on a previous work of \cite{Badhani17}, that helped us on machine learning techniques but they did not implement a real stream functionnality on their publication as we did, because they only use Tweepy and store their tweet fetched from it. One of the publication that helped us to analyse only English tweets was the W2VLDA and the work of \cite{Cuadros17}, they clearly have better results on English tweets. As an active research field that has emerged for a long time now, sentiment analysis is now been greatly implement but it is also with a cost (for example, IBM Watson Tone Analyzer). Sentiment analysis is a discipline that extracts people’s feelings, opinions, thoughts and behaviors from user’s text data using Natural Language Processing (NLP) methods. For methodologies on preprocessing, and feature generation, we based our work on process. Then we can also cite for a reason, they removed numbers from theirs tweet thinking that in general, numbers are of no use when measuring sentiment and are removed from tweets to refine the tweet content but we wanted to keep them thinking the contrary. We had over 800 million tweets in English and all that data to analyze where possible just because of the MapReduce Model in majority but there also a weakness for this model in our case.
+We apply the model to a set of 2D flow visualization methods that
+were previously studied by \citeN{Laidlaw2001}. This allows us to
+carry out a qualitative comparison between the model and how humans
+actually performed. We evaluated the model against human performance
+in an experiment in which humans and the model performed the same task.
 
-\section{Cloud computing}
-\label{sec:cloud}
+Our article is organized as follows. First we summarize what is
+known about the cortical processing of contours and introduce Li's
+\citeyear{Li1998a} model of the cortex. Next we show how a slightly
+modified version of Li's model differentially enhances various flow
+rendering methods. Following this, we develop a perceptual model of
+advection tracing and show how it predicts different outcomes for an
+advection path-tracing task based on the prior work of
+\citeN{Laidlaw2001}. Finally we discuss how this work relates to
+other work that has applied perceptual modeling to data visualization
+and suggest other uses of the general method.
 
-Cloud computing was used for the project with Amazon Web Service (AWS) for helping developer making machine learning built systems quickly. 
-Amazon Elastic MapReduce is a cloud-based Hadoop solution that Amazon has been offering since 2009. It is hosted on Amazon EC2's scalable cloud infrastructure and leverages the Amazon S3 storage service. The main interest of such a service in cloud mode is its elasticity. There is no need to plan in advance the necessary processing and storage capacity, this can be increased on the fly and the pricing is based on the resources actually consumed. An exemple, with Brown clusters can really be uselly \cite{Marquez16} in cloud computing service du to this complexity of this hierarchical clustering of words based on the contexts.
-Some of the potential disadvantages to be aware of are the high latency times for I / O on S3, which is inevitably greater than on a Hadoop home installation. Some of the scripts (see repositories) were launched on desktop, the config used at was:
-\begin{itemize}
-\item  i7 6700K @4.20Ghz
-\item  16GO DDR4 @2400Mhz
-\item  NVIDIA GTX 1060
-\item  128Go SSD / 3TO HDD
-\item  Debian 9.4 (Stretch) kernel version: 4.9.0-6-amd64
-\end{itemize}
+% Figure
+\begin{figure}[tp]
+\centering
+\includegraphics{acmlarge-mouse}
+\caption{Neurons are arranged in V1 in a column architecture. Neurons
+in a particular column respond preferentially to the same edge
+orientation. Moving across the cortex (by a minute amount) yields
+columns responding to edges having different orientations. A
+hypercolumn is a section of cortex that represents a complete set of
+orientations for a particular location in space.}
+\label{corticalarchitecturefig}
+\end{figure}
 
-For the read operations, the SSD was used to load the JSON files by hundreds or thousands, later calculations, the recording will be done on the HDD.
+\section{Cortical Processing of Contours}
+Visual information passes along the optic nerve from the retina of
+the eye where it is relayed, via a set of synaptic junctions in the
+midbrain lateral geniculate nucleus, to the primary visual cortex at
+the back or the brain (Visual Area 1 or V1). It has been known since
+the Hubel and Wiesel's work in the 60s that the visual cortex
+contains billions of neurons that are sensitive to oriented edges and
+contours in the light falling on the retina. Such neurons have
+localized receptive fields each responding to the orientation
+information contained within the light imaged in a small patch of
+retina. A widely used mathematical model of a V1 neuron's receptive
+field is the Gabor function \cite{Daugman1985}:
+\begin{equation}
+\label{gaboreqn}
+Gabor(u,v,\lambda,\theta,\phi,\sigma,\gamma)=e^{-\frac{u'^{2}+
+\gamma^{2}v'^{2}}{2\sigma^{2}}}cos(2\pi\frac{u'}{\lambda}+\phi).
+\end{equation}
 
-\subsection{MapReduce Model and Spark Framework}
-\label{subsub:mapreduce_spark}
+Hubel and Wiesel \citeyear{Hubel1962,Hubel1968} found that neurons
+responding to similar orientations were clustered together in a
+structure they called a column which extended from the surface of the
+visual cortex to the white matter (see Figure
+\ref{corticalarchitecturefig}). Later, they and other researchers
+discovered hypercolumn structures consisting of thousands of neurons
+all responding to the same area of visual space and selecting for a
+range of orientations. Overall, V1 contains a topographic map of the
+visual field having the property that every part of the retinal image
+is processed in parallel for all orientations. These orientation
+selective neurons have provided the basis for all subsequent theories
+of contour and edge detection.
 
-In 2015, Spark was used in more than one thousand Airbus companies at Toyota, Netflix or EBay. Spark is a distributed computing framework. MapReduce \cite{Baltas17} as they explain undertheir Cloud computing section, greatly simplified Big Data analysis on large clusters of machines that could fail. But MapReduce has become a victim of its success users are always asking more with applications, such as iterative operations (ML for example) or interactive operations (several requests is not suitable) for these types of operations. The only way for MapReduce (for example, two steps of the same algorithm) is through stable storage, physically writing to HDFS for example. But writing on a large volume of data data on HDFS is already taking a long time since it is necessary to replicate this data to be able to cope with any failures and to reload several times the same data from HDFS in the following jobs will be very slow. An algorithm that repeats the same operation in a loop will therefore quickly have a prohibitive calculation cost in MapReduce. Some Hadoop MapReduce applications thus pass the priority of their execution times on read and write operations.
+There remains the problem of how the output of orientation sensitive
+neurons, each responding to different parts of a visual contour,
+becomes combined to represent the whole contour. Part of the solution
+appears to be a contour enhancement mechanism. \citeN{Field1993}
+examined the human's ability to perceive a contour composed of
+discrete oriented elements. They placed a contour composed of
+separated Gabor patches, among a field of randomly orientated Gabor
+patches. Contours were detected when the patches were smoothly
+aligned. They were not detected when there was misalignment. This
+work suggests that there is some manner of lateral coupling among the
+visual elements involved in perceiving the Gabor patches in the
+contour. These researchers have suggested that similarly oriented
+aligned contours mutually excite one another, while they inhibit
+other neurons that are nearby (Figure~\ref{neuronalignmentfig}).
 
+\begin{figure}[tp]
+\centering
+\includegraphics{acmlarge-mouse}
+\caption{Neurons whose receptive fields are aligned along a
+continuous contour mutually reinforce each other. They inhibit nearby
+neurons with a similar orientation sensitivity.}
+\label{neuronalignmentfig}
+\end{figure}
 
+\section{Li's V1 Model}
+Based on the observed organization of the neurons in the visual
+cortex by Hubel and Wiesel \citeyear{Hubel1962,Hubel1968} and the
+experimental evidence by \citeN{Field1993}, Zhaoping Li constructed a
+simplified model of the behavior of V1 neurons and examined the
+model's ability to integrate contours across multiple V1 neurons.
+The model is introduced briefly here, and described in more detail in
+\citeN{Li1998a}. In Li's model, the cortex is approximated by a set
+of hypercolumns arranged in a hexagonal grid. Each hexagonal cell has
+12 orientation-selective neuron pairs oriented in 15-degree
+increments. One of the main simplifications embodied in Li's model is
+that it fails to incorporate the way the mammalian visual systems
+scales with respect to the fovea. Real neural architectures have much
+smaller receptive fields near the fovea at the center of vision than
+at the edges of the visual field.
+The neurons in each hex cell were grouped into excitatory and
+inhibitory pairs responding to an edge of a particular orientation at
+that location. Thus there were a total of 24 neurons per cell. The
+firing rates of both the inhibitory and excitatory neurons were
+modeled with real values. The neuron pairs affected neighboring
+neuron pairs via a transfer function that depended on the alignment
+of the edge selectivity orientations. Neuron pairs that were aligned
+with one another exhibited an excitatory effect on each other, while
+pairs that were not aligned inhibited each other. Finally, Li's model
+also contains feedback pathways for higher-level visual areas to
+influence individual neurons.
 
-\section{Methodology}
-\label{sec:methodology}
+In our implementation, the mapping of the hexagonal grid to the image
+space was such that the hex centers were separated by 10 pixels. For
+the V1 neuron response, we used the Gabor function (Eq.
+(\ref{gaboreqn})) with a wavelength, $\lambda$, of 21 pixels, a
+$\sigma$ of 7 pixels, and an aspect ratio, $\gamma$, of 1.
 
-First, we will talk about scripts using Spark with Scikit-learn and TextBlop. Scikit-learn provides us with efficient tools for data mining and data analysis, it’s usable in various contexts and can be downloaded on their website as an open-source program. TextBlob is a library for processing textual data with natural language processing (NLP) tasks such as sentiment analysis, classification, translation, and more. TextBlop use Google translate \footnote{\url{https://github.com/mbenhamd/twitter-sentiment-analysis/tree/master/gtranslate_module}} for sentences that are not in English, so in free and anonymous usage are limited 1000 words/day which is why we could not have analyzed every tweet on the database. The Spark Python API (PySpark) exposes the Spark programming model to Python. We used it because it simpler and we have a gain of productivity against language such as Scala (In some cases like counting the number of languages or doings some basic statistics we used Scala, source is available in the Github repository of the project) or Java. Python is dynamically type, so RDDs can hold objects of multiple types. To run all those libraries, we used Amazon EMR, an Amazon EMR. For the real-stream part, we created a module for Data Stream with Kinesis \footnote{\url{https://github.com/yannistannier/twitter-sentiment-analysis/tree/master/kinesis-realtime}} and MQTT. We used a StreamListener that will permanently get data from Twitter and a consumer which analysed each tweet with TextBlop and Scikit-Learn.
-MQTT is a publish-subscribe messaging protocol based on the TCP / IP protocol, it was originally developed by Andy Stanford-Clark (IBM) and Arlan Nipper (EurtoTech), then offered to the Open Source community (For information, MQTT v3.1.1 is now an OASIS standard). We developed the website using React.js, we could design simple views for each state in our application, and React efficiently update and render just the right components when your data changes. Text from tweets are inherently noisy. They contain twitter specific words along with hashtags and username mentions. Cleaning the text before further processing helps to generate better features and semantics.
-Machine learning approach relies on statistical algorithms in one hand to solve the Sentiment Analysis as a regular text classification problem that makes use of syntactic and/or linguistic features. Text Classification Problem Definition: We have a set of training records D where each record is Sentiment analysis algorithms and applications: A survey labeled to a class. The classification model was written in Python and we used TextBlop for sentiment analysis. Then for a given instance which mean an input of tweet coming via a StreamListener with Kinesis or in the Archive of unknown class, the model is used to predict in what label it should be. The hard classification problem about tweets is that we can’t really be sure about results only if tweet were confirmed by a human being or every user of Tweeter will have to add information like sentiment and emotion for his tweet before sending it but, how can we be sure it is true?
+\section{Streamline Tracing Algorithm}
+\citeN{Laidlaw2001} compared the effectiveness of
+visualization techniques by presenting test subjects with the task of
+estimating where a particle placed in the center of a flow field
+would exit a circle. Six different flow-field visualization methods
+were assessed by comparing the difference between the actual exit
+numerically calculated and the estimation of the exit by the human
+subjects. Laidlaw et~al.'s experiment was carried out on humans but,
+in our work, we apply this evaluation technique to humans as well as
+to our model of the human visual system and use a streamline tracing
+algorithm to trace the path of the particle.
 
-\begin{figure}[H]
-{\includegraphics[width=\linewidth]{first_ten_languages.png}}
-\caption{Results for 1 208 516 638 tweets analysed (deleted tweet was not count).}
-  \label{fig:trump_results}
+We use the term streamline tracing to describe the higher level
+process that must exist for people to judge a streamline pathway.
+We call it streamline tracing because the task seems to require the
+user to make a series of judgments, starting at the center, whereby
+the path of a particle dropped in the center is integrated in a
+stepwise pattern to the edge of the field. Though many algorithms
+exist in the machine vision literature for contour tracing, we found
+these to be inappropriate for use in this application. Contour
+tracing algorithms are generally designed to trace out the boundary
+of some shape but a streamline tracing algorithm must also be able
+able to produce a streamline in a field of disconnected contours,
+such as is the case with the regular arrows. The streamline to be
+traced will often not follow a visible contour but instead be locate
+between contours, and will sometimes pass through areas devoid of
+visual elements. Thus we developed a specialized algorithm that is
+capable of tracing streamlines that do not necessarily correspond to
+the boundary of any shape but can pass between visual contours.
+
+Perception is a combination of top-down and bottom-up processes.
+Bottom-up processes are driven by information on the retina and are
+what is simulated by Li's model \citeyear{Li1998a}. Top-down
+processes are much more varied and are driven in the brain by
+activation from regions in the frontal and temporal cortex that are
+known to be involved in the control of pattern identification and
+attention \cite{Lund2001}. All of the flow visualizations evaluated
+by \citeN{Laidlaw2001}, except for LIC, contain symbolic information
+regarding the direction of flow along the contour elements (e.g. an
+arrowhead). In a perpetual/cognitive process this would be regarded
+as a top-down influence. At present our model does not deal with
+symbolic direction information but it does do streamline tracing once
+set in the right general direction.
+
+Streamline tracing is a combination of top-down and bottom-up
+processes. Broadly speaking, top-down processes reflect task demands
+and the bottom-up processes reflect environmental information. In our
+case, the bottom-up information comes from the different types of
+visualization, while the top-down information is an attempt to model
+the cognitive process of streamline pathway tracing. Contour
+integration was modeled using the following iterative algorithm.
+
+% Algorithm
+\medskip
+\begin{algorithm}[H]
+\SetAlgoNoLine
+$current\_position \leftarrow$ center \\
+$current\_direction \leftarrow$ up \\
+$current\_position$ is inside circle \\
+\While{$current\_position$ is inside circle,}{
+  $neighborhood \leftarrow$ all grid hexes within two hexes from $current\_position$ \\
+  \For{ each $hex$ in $neighborhood$, }{
+  \For{each $neuron$ in $hex$}{
+  convert $neuron\_orientation$ to $vector$ \\
+  scale $vector$ by $neuron\_excitation$ \\
+  $vector\_sum \leftarrow vector\_sum + vector$}}
+
+  normalize $vector\_sum$ \\
+  $current\_position \leftarrow current\_position + vector\_sum$ \\
+  $current\_direction \leftarrow vector\_sum$ \\
+return $current\_position$ \\
+}
+    \caption{Iterative Algorithm}
+    \label{alg:one}
+  \end{algorithm}
+\medskip
+
+The algorithm maintains a context that contains a current position
+and direction. Initially, the position is the center, and the
+direction set to upward. This context models the higher-order,
+top-down influence on the algorithm that results from the task
+requirements (tracing from the center dot) and the directionality
+which in our experiment was set to be always in an upwardly trending direction.
+
+The algorithm traces the contour by repeatedly estimating the flow
+direction at the $current\_position$ and moving the position a small
+distance (.5 hex radii) in that direction. The flow direction is
+calculated from the neural responses in the local neighborhood of the
+$current\_position$. The excitation of each neuron is used to
+generate a vector whose length is proportional to the strength of the
+response and whose orientation is given by the receptive field
+orientation. Because receptive field orientations are ambiguous as to
+direction (for any vector aligned with the receptive field, its
+negative is similarly aligned). The algorithm chose the vector most
+closely corresponding to the vector computed on the previous
+iteration. Vectors are computed for all neurons in hypercolumns
+within a 2-hexes radius of the current position; they are summed and
+normalized to generate the next $current\_direction$.
+
+Some changes were made from the method published by
+\citeN{Pineo2008}. Previously, the algorithm considered only a single
+hex cell at each iteration of the algorithm. We found that this would
+occasionally cause unrealistically large errors in streamline
+tracing. For example, on visualizations with arrowheads, the neural
+network might yield a very strong edge orthogonal to the flow field
+positioned at the back of an arrowhead. If the algorithm considered
+only the edges at this point, it may make a significant error,
+despite the edges in nearby positions indicating the correct
+direction. We felt that creating an average over $neighborhood$ was
+the more correct approach, and we found closer agreement with human
+performance with this change.
+
+\subsection{Qualitative Evaluation}
+Four different flow visualization methods were used in our evaluation
+of the theory. These were implementations of four of the six used by
+\citeN{Laidlaw2001}. We chose to investigate a regular arrow grid
+because it is still the most commonly used in practice and a jittered
+arrow grid because of the arguments that have been made that this
+should improve perceptual aliasing problems \cite{Turk1996}. We added
+Line Integral Convolution (LIC) because of its widespread advocation
+by the visualization community \cite{Cabral1993} and head-to-tail
+aligned streaklets because of Laidlaw et al.'s finding that is was
+the best and the theoretical arguments in support of this method
+\cite{Ware2008}. Note that Laidlaw et al. used Turk and Banks
+algorithm to achieve aligned arrows on equally spaced streamlines
+while we used Jobard and Lefer's \citeyear{Jobard1997} method to
+achieve the same effect and we used streaklets without an arrowhead
+\cite{Fowler1989}.
+
+\begin{figure}[tp]
+    \begin{minipage}[t]{0.45\linewidth}
+        \centering
+        \includegraphics{acmlarge-mouse}
+        \caption{Regular arrows.}
+        \label{regularfig}
+    \end{minipage}
+    \hspace{0.1\linewidth}
+    \begin{minipage}[t]{0.45\linewidth}
+        \centering
+        \includegraphics{acmlarge-mouse}
+        \caption{Jittered arrows.}
+        \label{jitteredfig}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[tp]
+    \begin{minipage}[t]{0.45\linewidth}
+        \centering
+        \includegraphics{acmlarge-mouse}
+        \caption{Closeup of neural response to arrowheads.}
+        \label{ortharrowheadfig}
+    \end{minipage}
+    \hspace{0.1\linewidth}
+    \begin{minipage}[t]{0.45\linewidth}
+        \centering
+        \includegraphics{acmlarge-mouse}
+        \caption{Closeup of neural response to aligned streaklets.}
+        \label{alignedcloseupfig}
+    \end{minipage}
 \end{figure}
 
 
-\subsection{Pre-processing}
-\label{subsub:preprocessing}
+V1 is known to have detectors at different scales. However, to make
+the problem computationally tractable we chose only a single scale
+for the V1 and designed the data visualizations with elements scaled
+such that they were effectively detected by the gabor filter used by
+the model. The widths of the arrows and streaklets were chosen to be
+smaller than the central excitatory band of the gabor filter. This
+allowed the edge to be detected even if not precisely centered on the
+receptive field of the neuron. The spatial frequency of the LIC
+visualization is defined by the texture over which the vector field
+is convoluted. Our texture was created by generating a texture of
+random white noise of one-third the necessary size and scaling it up
+via. interpolation. The resulting spacial frequency of the LIC
+visualization was of a scale that was effectively detected by the
+gabor filters of the model.
 
-In this paper we introduce two new resources for pre-processing twitter data \cite{Jianqiang17}, we used some of their ideas like removing URL, as you can see in the repository, an emoticon dictionary is available in Python and we can remove them from any tweets.Unsure and irrelevant label was not used for this classfication \cite{Poddar16} because we think that it is more relevant to detect bots and not adding them into the analyse process rather than put a tag on them and lose time of computation for sentiment analysis. It is powerful because even it is relevant, we can’t take them for computing them after due to a problem of time. Positive, Negative, and Neutral are the three labels for Sentiment Analysis and Joy, Fear, Anger, Surprise and Sadness are the fifth labels for Emotion Analysis. We pre-process all the tweets as follows:
-1) We remove all the emoticons
-2) We remove all URLs with a regular expression 
-3) Replace targets (e.g. “@John”) by also removing them
-4) Removing “RT” for most of the tweet, because it doesn’t mean something for the application. 
-Tweets in a general way contain a lot of opinions but they are expressed in different ways by users, as they did \cite{Rebecca11} by keeping emoticons. It deals with the preparation that removes the repeated words and punctuations and improves the efficiency the data. Forward other process is doing like converting upper case to lower case. User names and URLs are not important from the perspective of future processing; hence their presence is futile. All usernames and URLs are removed to improve increase the real result. 
+% Head 3
+\subsubsection{Regular Arrows (Figure \ref{regularfig})} This
+visualization is produced by placing arrow glyphs at regular
+spacings. The magnitude of the vector field is indicated by the arrow
+length, and the flow direction by the arrow head. The grid underlying
+the regular arrows is apparent to humans, but the edge weights of the
+model show no obvious signs of being negatively affected. In fact,
+the regularity ensures that the arrows are well spaced, preventing
+any false edge responses that might be produced by the interference
+of multiple arrows. We can expect that nontangential edge responses
+will be produced by the arrowheads and these will lead to errors in
+the streamline advection task.
 
-
-
-\subsection{Machine learning for Emotion and Sentiment classification}
-\label{subsub:ml}
-
-In order to predict the feeling (Postive, negative, neutral) and emotion (joy, anger, sadness, fear,surprise) for each tweet, we used 2 methods. They used other label for emotions that we did not 
-To determine the feeling of the tweet, we used the TextBlod librairy which provides a simple API of Natural Languge processing and thus allows us to make the sentiment anlysise. For this, Textblod calculates a Polarity rate of -1 to +1 or -1 corresponds to an extremely negative twitch and an extremely positive +1.
-To determine the emotion, we had to create our own classification model (classification in English what) with scikit-learn.
-To do this we took a tweet dataset that we labalised (after having data cleaned as indicated in the previous paragraph) thanks to indico.
-We then transform this dataset into a term document matrix and apply a TF-IDF standardization to evaluate the importance of the term content in each tweet.
-Finally we applied a SVM for the classification because like they said \cite{Medhat14}, it is very suitable for text data.
-Once the model was extracted, we used it with spark to predict the emotion of all the tweets.
-
-\subsection{Feature Generation}
-\label{subsub:featureGeneration}
-
-Take the example of a two-step algorithm, MapReduce will have to perform two jobs:
-At the first job:
-1.	Read the initial data.
-2.	Execute step 1 in a first job.
-3.	Save the intermediate result in a distributed way
-In the second job:
-1.	Read this result
-2.	Execute step 2
-3.	Save the result in a distributed way.
-Spark shares the RDD with the initial data and, by applying step 1, will provide in step 2 a "virtual" intermediate RDD representing the result of step 1 without necessarily immediately rotating the calculation. When the result of step 2 is requested, Spark will combine the calculations required in steps 1 and 2 into one Spark job that will:
-1.	Read the initial data
-2.	Perform steps 1 and 2, the intermediate result remaining in memory.
-3.	Save the result in a distributed way.
-Spark thus avoids expensive distributed writing and replay and then only requires the execution of one job (each job having an incompressible structure cost).
-When the algorithm has several steps, the time saving becomes considerable!
-Two types of operations (In technical terms, Spark calculates a direct acyclic graph of the operations to be performed, like Apache Storm or Apache Tez) can be performed on RDDs: transformations and actions. Transformations return a new "virtual" RDD: nothing is then evaluated or persisted, while the actions evaluate and return a value. After an action, all the previous transformations are then computed (see the repository in the compute folder).
-
-\section{Implementation}
-\label{sec:implementation}
-
-We have used the following technologies for many reasons. Hadoop assumes that conventional approaches (consisting of developing ever more powerful centralized systems) have technical and financial limitations. The development of distributed systems consisting of machines or nodes, relatively affordable (commodity hardware) and scaling out is an alternative from a technical and financial point of view because a distributed system comprising tens, hundreds or thousands of nodes will regularly be confronted with hardware and/or software failures. Google has developed the Google File System (GFS), ancestor of the Hadoop Disrelated File System (HDFS) \cite{Baltas17} and The MapReduce Approach. A Hadoop program usually implements both map tasks and reduce tasks. Hadoop is particularly effective for dealing with problems that have one or more of the following characteristics: Volume of data to store or process very important. Need to perform processing on all data (batch rather than transactional, therefore). Heterogeneous data in terms of origin, structure, and format (JSON for example, Tweets collected via any Tweeter API are send in JSON because of the flexibility of this type of object. Several examples are in the repository for interested readers). Execute the tasks of a Hadoop job in parallel, without a pre-established order. A Hadoop cluster is made up of tens, hundreds, or thousands of nodes. It is the addition of the storage and processing capacities of each of these nodes which makes it possible to offer a storage space and a computing power yet to handle data volumes of several To or Po. To improve the performance of a read / write cluster, Hadoop’s file management system, HDFS, writes and reads files in blocks of 64 MB or 128 MB. Working on such large blocks maximizes data transfer rates by limiting search time on hard drives (seek time). MapReduce is a programming model designed specifically to read, process and write very large volumes of data. A Hadoop program usually implements both map tasks and reduce tasks those programs are usually divided into three parts: The driver, which runs on a client machine, is responsible for configuring the job and submitting it for execution. The map is responsible for reading and processing data stored on disk. The reducer is responsible for consolidating the results from the map and write them on disk. Naturally, the implementation core use Hadoop for these reasons.
-
-\section{Web application}
-\label{sec:web_application}
-
-
-\subsection{Conception of the DataBase (Web Site)}
-\label{subsub:conception_db}
-
-In order to allow quick access to the data on the website at any time, we had to make a lot of pre-payment.
-Finally, by budget limitation, we can not offer a database with a very strong capacity of cpu or datawharehouse we can manage peta byte data. The postgresSQL database is based on a micro instance of 1 CPU and 2 GB of ram.
-With this configuration, it is clearly impossible to perform complicated SQL queries such as group by, cost, and other aggregation on 350 million lines.
-For this reason, we decided to optimize our database and create a table corresponding to a data item that we want to display. The query is thus done only on indexes, the response time is then very fast (100ms maximum) regardless of the size of the table.
-To do this, we had to proceed by step:
-1st step:
-The first step was to define exactly the data we wanted to display: We selected temporal data (Psychological evolution during the year, for each month, according to the time), as well as trends, better users and best retweets monthly / yearly. We also chose to be able to display the psychological profile for each user (Global psychological evaluation, number of tweet / retweet and evolution over the year).
-2nd step:
-We coded Spark scripts for each problem to calculate what we wanted to display. All calculation scripts are here\footnote{\url{https://github.com/yannistannier/twitter-sentiment-analysis/tree/master/compute}}. 
-3rd step:
-Each Spark script returned us an aggregated file as we wanted, we just had to import these files into the corresponding tables taking care to organize our indexes.
-For example: to retrieve the psychological evolution of a user, we just have to make a simple SQL query on the table {\itshape user\_stat} with a selection on index (where id = 1656561) and the query we reference in 100ms 12 rows corresponding to each month. The same request with several accreditation operators on the initial table took several minutes to answer us.
-
-
-
-\begin{figure}[H]
-{\includegraphics[width=\linewidth]{table-web-db.png}}
-\caption{Schema of the DataBase.}
-  \label{fig:archivedb}
-\end{figure}
-
-
-\subsection{Conception of the Archive Access}
-\label{subsub:conception_aa}
-
-Once the database was created, we wanted the render very easily accessible to the public and we have developed a web platform.
-The platform presents a very classic web architecture. Our database Postgres with aggreger data is hosted by AWS RDS.
-We have developed Api RestFul through AWS Lambda and AWS GateWey that are responsible for executing sql requests and returning formatting data.
-And finally our web client react.js whose sole role is to call the Api Restfull and display the data visualization.
-
-
-\begin{figure}[H]
-{\includegraphics[width=\linewidth]{archive-schema.png}}
-\caption{Schema for the Archive Web Application.}
-  \label{fig:archiveweb}
-\end{figure}
-
-\subsection{Conception of the Real Stream}
-\label{subsub:conception_rs}
-
-For the real-time part, we chose to use kinesis Data Streams, which is the real-time data analysis service of AWS.
-For this we have created a Twitter streamer that is responsible for recovering real-time data via the API Stream of twitter. This data is sent to Kinesis Data Streams which allows you to aggregate data from multiple sources.
-These data are thus sent to a consumer who is responsible for analyzing and predicting the emotion and feeling in real time through textblod and our model of emotion prediction.
-Once the data is analyzed, our Consumer formats them and sends the result to our web client thanks to MQTT.
-Real streams scripts can be found here\footnote{\url{https://github.com/yannistannier/twitter-sentiment-analysis/tree/master/kinesis-realtime}}.
-The streamTwitter.py file is our Twitter streamer and the kinesisStream.py file is our Consumer.
-
-
-\begin{figure}[H]
-{\includegraphics[width=\linewidth]{real_stream-schema.png}}
-\caption{Schema for the Real Stream Web Application.}
-  \label{fig:archivers}
-\end{figure}
-
-
-\section{Results}
-\label{sub:results}
-
-\subsection{English tweets monthly analyzed}
-\label{subsub:english_tweets_monthly}
-
-We analyzed the set of English tweets on the year, dividing by month to see any evolution or regression during the year. A thorough American sociological study on the year 2017 could give the reasons for the graph. We were surprised at the symmetry between joy and sadness, proof that the emotional analysis is not as biased as one might think. 
-
-
-\begin{figure}[H]
-{\includegraphics[width=\linewidth]{monthly_analysis_joy_sadness-exemple.png}}
-\caption{Results by month for joy and sadness emotions during the 2017.}
-  \label{fig:trump_results}
-\end{figure}
-
-
-
-
-\subsection{Psychological profile for any users}
-\label{subsub:psychological_profile}
-
-We have implemented a psychological profile by current user in the database (note that this feature and also available in the case of streaming too). Here we have taken the case of Donald Trump as an example since he is an active user of the social network.
-The problem of sentiment analysis from archive tweets is that there are not so many tweets as one does not imagine per user.
-
-\begin{figure}[H]
-{\includegraphics[width=\linewidth]{Trump-results-analysis_exemple.png}}
-\caption{Results predicted by our models with Donald John Trump (born June 14, 1946), the 45th and current President of the United States.}
-  \label{fig:trump_results}
-\end{figure}
-
-
-\subsection{Impacts of tweets}
-\label{subsub:impacts_tweets}
-
-In this section, we wanted to talk about the effect of tweets on the community, taking the utmost retweeting the tweet of Donals Trump. We have 414 716 retweet which allows to have a number of acceptable messages to use the word "impacts". In this publication, \cite{Vyas17}, we found interisting their fought on what they call "influence" and tools used about that. It is interesting in the field of politics but also in the media world to have an analysis of what is said and done in the world today.
-
-
-\begin{figure}[H]
-{\includegraphics[width=\linewidth]{retweeted_emotion_sentiment_trump-exemple.png}}
-\caption{Results for the emotions ratio on the 414 716 retweeted Donald Trump tweets computed.}
-  \label{fig:trump_results}
-\end{figure}
+% Head 4
+\paragraph{Jittered arrows (Figure \ref{jitteredfig})}
+This visualization is similar to the regular arrows, but the arrows
+are moved a small random distance from the regular locations. While
+composed of the same basic elements as the regular grid, we see
+instances where nearby arrows interfere with each other and produce
+edge responses nontangential to the flow direction. Also, as with
+gridded arrows, the arrowheads will excite neurons with orientation
+selectivity nontangential to the flow. This can be seen in
+Figure~\ref{ortharrowheadfig}. In this figure, we can see orthogonal
+neural excitation to each side of the upper arrow, caused by the back
+edge of the arrowhead (blue circles). We can also see excitation
+caused by the interference of two arrows at the bottom right (green
+circle). These nontangential responses are much stronger than those
+found in the aligned streaklets visualization (Figure \ref{alignedcloseupfig}).
 
 
 \section{Discussion}
-\label{sec:discussion}
+The overall agreement between the pattern of results for human
+observers and the V1-based model provides strong support of the
+perceptual theory we outlined in the introduction. The aligned arrows
+style of visualization produced clear chains of mutually reinforcing
+neurons along the flow path in the representation, making the flow
+pathway easy to trace as predicted by theory.
 
-We now turn our attention to the following interesting question: whether the subjective data that exist on the web carry useful information. Information can be thought of as data that reduce our uncertainty about some subject.This is an example with a sample of 383 623 424 tweets in English.
+The fact that LIC produced results as good as the equally spaced
+streamlines was something of a surprise, and this lends support to
+its popularity within the visualization community. While it did not
+produce as much neuron excitation as the aligned arrows method, this
+was offset by the lack of nontangential edge responses produced by
+glyph-based visualizations. However, its good performance was
+achieved only because our evaluation method ignored the directional
+ambiguity inherent in this method. \citeN{Laidlaw2001} found this
+method to be the worst and there is little doubt that had we allowed
+flow in any direction, up or down, human observers would have found
+pathways with close to 180 degrees of error half of the time.
 
-\begin{table}[H]
+The performance of both the model and the human test subjects is
+likely to be highly dependent on the underlying vector field used.
+As described in Section 5.1.6, the vector field was generated by
+interpolating between an 8x8 grid of random, but generally upward
+pointing vectors. A consequence of this is that when adjacent vectors
+in this grid point somewhat toward each other, the vector field forms
+an area of convergence. This convergence area tends to funnel
+neighboring streamline paths together, reducing error in streamline
+tracing (Figure \ref{regularfig} is an example of this).  Thus, the
+overall accuracies of both the model and human subjects may be higher
+than might be might be observed using a vector field without such convergence zones.
 
-\tbl{Cross Tab between sentiments and emotions}{%
-\begin{tabular}[width=\linewidth]{rcrcrcrcrcrc@{0.5in}}
-S\textbackslash E &{Joy} &{Fear} &{Anger} &{Surprise} &{Sadness} \\
-$Positive$ & 63 559 579 & 9 296 846 & 27 861 247 & 7 768 707 & 42 382 993  \\
-$Neutral$ & 55 127 659 & 15 777 833 & 42 460 015 & 8 879 626 & 48 232 835 \\
-$Negative$ & 9 054 496 & 3 395 622 & 23 281 712 & 1 948 578 & 24 595 676 \\
-\end{tabular}}
-\label{tab:cross_tab}
-\end{table}
+We were surprised that the computer algorithm actually did better at
+the task than human observers. One reason for this may have been that
+humans would have to make saccadic eye movements to trace a path,
+whereas the computer did not. For the patterns we used, it is likely
+that the observers had to make fixations on several successive parts
+of a path, and errors may have accumulated as they resumed a trace
+from a previous fixation. Nevertheless, we feel that the algorithm
+could easily be adjusted to make it give results closer to human
+subjects. A more sophisticated approach would be to simulate eye fixations.
 
-According to this view, the diversity and pluralism of information on different topics can have a rather negative role. It is well understood, that true knowledge is being described by facts, rather than subjective opinions. However, this diversity in opinions, when analyzed, may deliver new information and contribute to the overall knowledge of a subject matter. This is especially true when the object of our study is the attitude of people. In this case, opinion native data can be useful to uncover the distribution of sentiments across time, or different groups of people. However, data mining differs from machine learning and statistics in that it deals with large volumes of data, stored primarily on disk. Some types of knowledge discovered from a database can be represented by a set of rules. The following is an example of a rule, stated informally: “Donald Trump and his totals of retweets incomes are greater than the average with the most sadly effects on users”. Of course, such riles are not universally true, and have degrees of “support” and “confidence”. Other types of knowledge are represented by equations relating different variables to each other, or by other mechanisms for predicting outcomes when the values of some variables are known. There are a variety of possible types of patterns that may be useful, and different techniques are used to find different types of patterns. Usually there is a manual component to data mining, consisting of preprocessing data to a form acceptable to the algorithms and post-processing of discovered patterns. For this reason, data mining is really a semiautomatic process in real life. The mode widely used applications are those that requires some sort of prediction. In our case, we want to predict emotions and sentiments, then a psychological profile. We outline what is classification, study techniques for building one type of classifiers, called decision-tree classifiers, and then study other predication techniques. Abstractly, the classification problem is this: Given that user in the archive, and given his tweet. We use a given instances of items along with the classes to which they belong, the problem is to predict the class. Since we associate several classes together, then we come to conflicting analyzes. 
-
-\begin{figure}[h!]
-{\includegraphics[width=\linewidth]{final_plot_contradiction_analysis.png}}
-\caption{Results for ratio Emotion/Sentiment with Number of tweets}
-  \label{fig:contradiction_barplot}
-\end{figure}
-
-First non-surprising results like Joy/Positive at 49.75 \% and Joy/Negative at 7.08 \%.
-We can see that we normally associate sadness with something negative, for example, but here we see that positive feelings are predominant, just as anger has a majority of positive feelings. One publication can also be referred \cite{Alm05}  because accordly to this addition between emotion and sentiment, they also have other results.
-
-
-\section{Conclusion and Future Work}
-\label{sec:conclusion}
-
-In this report we have presented a sentiment analysis tool on a Web interface, in one hand we used data from an archive end in the other we used real time stream analysis. Due to the absence of labelled data we couldn't argue on reliability of data.  This recent publication really question us about the limit on software engineering \cite{Lin18}, but they did not explored deep learning \cite{Meisheri17} and what we could achieve with this learning techniques using neural network fully connected that we always only get better with time because of optimized function behind and great computation that we have nowaydays due to GPU. 
-There are also other features for the real stream \footnote{\url{https://twitter.yannistannier.io/#/realtime}} such as geolocation of people, we could then generate a graph as a center to any user and know its impact on an interactive map, this would allow among other things to know the influence for example.
+The model we applied is a considerable simplification over what
+actually occurs. It only uses the simplest model of the simplest
+orientation sensitive neurons, and fails to include cortical
+magnification, among other shortcomings. Real cortical receptive
+fields are not arranged in a rigid hexagonal grid as they are in Li's
+model. Furthermore, the neurons of V1 respond to many frequencies,
+however our model only uses one in its present form. In addition,
+besides the so-called simple cells modeled by \citeN{Li1998a}, other
+neurons in V1 and V2 called complex and hypercomplex cells all have
+important functions. For example, end-stopped cell respond best to a
+contour that terminates in the receptive field and understanding
+these may be important in showing how the direction of flow along a
+contour can be unambiguously shown. Moreover, visual information is
+processed through several stages following the primary cortex,
+including V2, V4 and the IT cortex. Each of these appears to abstract
+more complex, less localized patterns. Researchers are far from
+having sufficient information to model the operations of these stages
+all of which may have a role in tracing contours. Nevertheless, the
+results are compelling and there are advantages in having a
+relatively simple model. We have plans to add some of these more
+complex functions in future versions of the model.
 
 % Start of "Sample References" section
 
-\section{References}
+\section{Typical references in new ACM Reference Format}
+A paginated journal article \cite{Abril07}, an enumerated
+journal article \cite{Cohen07}, a reference to an entire issue \cite{JCohen96},
+a monograph (whole book) \cite{Kosiur01}, a monograph/whole book in a series (see 2a in spec. document)
+\cite{Harel79}, a divisible-book such as an anthology or compilation \cite{Editor00}
+followed by the same example, however we only output the series if the volume number is given
+\cite{Editor00a} (so Editor00a's series should NOT be present since it has no vol. no.),
+a chapter in a divisible book \cite{Spector90}, a chapter in a divisible book
+in a series \cite{Douglass98}, a multi-volume work as book \cite{Knuth97},
+an article in a proceedings (of a conference, symposium, workshop for example)
+(paginated proceedings article) \cite{Andler79}, a proceedings article
+with all possible elements \cite{Smith10}, an example of an enumerated
+proceedings article \cite{VanGundy07},
+an informally published work \cite{Harel78}, a doctoral dissertation \cite{Clarkson85},
+a master's thesis: \cite{anisi03}, an online document / world wide web resource \cite{Thornburg01}, \cite{Ablamowicz07},
+\cite{Poker06}, a video game (Case 1) \cite{Obama08} and (Case 2) \cite{Novak03}
+and \cite{Lee05} and (Case 3) a patent \cite{JoeScientist001},
+work accepted for publication \cite{rous08}, 'YYYYb'-test for prolific author
+\cite{SaeediMEJ10} and \cite{SaeediJETC10}. Other cites might contain
+'duplicate' DOI and URLs (some SIAM articles) \cite{Kirschmer:2010:AEI:1958016.1958018}.
+Boris / Barbara Beeton: multi-volume works as books
+\cite{MR781536} and \cite{MR781537}.
 
-\begin{acks}
-We are grateful to the following people for resources, discussions and suggestions: Jason Scott (Archivist) and Diana Yuan (Co-Founder & Vice President, Talent & Operations from Indico).
-\end{acks}
+% Appendix
+\appendix
+\section*{APPENDIX}
+\setcounter{section}{1}
+
+
+With closest point to a given set of lines we intend the point
+having the minimum Euclidean distance with respect to those lines.
+Typically, this problem is formulated using Pl\"{u}cker coordinates.
+Instead, here we compute this point by solving the problem in a closed
+form, since the resulting matrices are not ill-conditioned in our
+case. More precisely, by indicating the set of $n$ lines with
+%
+\begin{equation}
+  L = \left \{ l_i = O_i + t \vec{d}_i | \, t \in {R} \right \} \,\,\, i = 1
+  \ldots n,
+  \label{eq:setoflines}
+\end{equation}
+%
+where $O_i$ is the origin of the $i$th line and $\vec{d}_i$ is the
+corresponding direction (normalized), we found the closest point by
+minimizing
+%
+\begin{equation}
+  p = \arg \min_{x} \sum_{i=1}^{n} d(x,l_i).
+  \label{eq:problemstatement}
+\end{equation}
+%
+The distance $d(x, l_i)$ can be written as
+%
+\begin{equation}
+  d(x , l_i)^2 = (x - O_i) \left [ \textbf{I} - \vec{d_i} \vec{d_i}^T \right ] (x - O_i).
+  \label{eq:distance}
+\end{equation}
+%
+The minimization is obtained by substituting (\ref{eq:distance}) in
+(\ref{eq:problemstatement}), and imposing the derivative to zero.
+%
+After some simple algebra, we obtain the final formulation:
+%
+\begin{equation}
+  p = \left [ n \textbf{I} - \sum_{i=1}^{n} \vec{d_i} \vec{d_i}^T
+  \right ]^{-1} \sum_{i=1}^{n} \left [ \textbf{I} - \vec{d_i} \vec{d_i}^T \right ] O_i.
+  \label{eq:closedform}
+\end{equation}
 
 % Bibliography
-
 \bibliographystyle{ACM-Reference-Format-Journals}
-\bibliography{publication-bibfile}
+\bibliography{acmlarge-sample-bibfile}
+                                % Sample .bib file with references that match those in
+                                % the 'Specifications Document (V1.5)' as well containing
+                                % 'legacy' bibs and bibs with 'alternate codings'.
+                                % Gerry Murray - March 2012
+
+% History dates
+\received{February 2009}{July 2009}{October 2009}
+
+
+\elecappendix
+
+
+\section{Analysis of Invalid Trials}
+\label{invalid}
+
+\subsection{Results}
+
+
+Invalid trials were previously defined as those trials in which the
+subject pressed the space bar to end the trial without first bringing
+the virtual finger to a stop. The number of invalid trials for each
+subject is presented by feedback condition in Figure~12. Due to the
+irregular distribution of the data, no significance test was run.
+However, the figure shows two notable features. First, Subject 6 had
+more invalid trials than any other subject. Second, more invalid
+trials occurred under the proprioceptive-only (NV$+$P) feedback
+condition than any other.
+
+
+
+\subsection{Discussion}
+
+Although the number of invalid trials is not directly related to task
+performance, we now consider any trends that may be seen in this
+information. No statistical tests were done with this data, but some
+inferences can be drawn from the invalid trial counts in Figure 12.
+The only obvious trend is that the NV$+$P condition appears to have
+the most invalid trials, which is the case for all but two subjects.
+In the post-experiment survey, one subject commented on this trend,
+saying that with only proprioceptive motion feedback it was hard to
+tell if the finger was moving or not. This might be a result of a
+larger threshold for absolute motion detection for proprioceptive
+feedback than for visual feedback. This difficulty in stopping the
+finger did not appear to affect the ease of use ratings provided by
+subjects, as no correlation was observed with invalid trial counts.
+
+It is interesting to note that the no-feedback condition (NV$+$NP)
+had fewer invalid trials than the proprioceptive-only condition
+(NV$+$P), especially in light of the findings of Ghez et al. [1990]
+that deafferented individuals tend to display endpoint drift in
+non-sighted targeted reaching movements (equivalent to NV$+$NP
+condition) while neurologically normal individuals do not (equivalent
+to NV$+$P condition). A notable difference between our study and the
+study by Ghez et al.\ is the availability of kinesthetic feedback
+from the thumb pressing on the force sensor, which indicates the
+magnitude of the applied force, that is, the movement command in our
+study. Thus, under the no-feedback condition, subjects could use this
+information to learn to apply grasping forces within the dead zone to
+stop finger movement. When motion feedback is available, subjects are
+likely focusing more on the feedback than on the forces applied,
+since the feedback allows them to achieve better accuracy. Thus, at
+the end of a trial, subjects are most likely using this feedback as
+an indicator of zero velocity rather than attending to the applied
+force. When visual feedback is available, it is easy to determine
+whether the finger is moving or not; however, when only
+proprioceptive feedback is available, the finger can be moving slowly
+without the subject being aware of its motion. This explanation would
+result in a larger number of failed trials for the NV$+$P condition
+than for any other, as observed.
 
 \end{document}
+% End of v2-acmlarge-sample.tex (March 2012) - Gerry Murray, ACM

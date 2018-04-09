@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.7)  7 APR 2018 03:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.7)  9 APR 2018 03:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,62 +6,51 @@ entering extended mode
 (./publication.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 5 language(s) loaded.
-(./acmtog.cls
-Document Class: acmtog 2012/03/07
-(/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
-Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
-\symlasy=\mathgroup4
-LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
-(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
-) (./url.sty
+(./acmlarge.cls
+Document Class: acmlarge 2012/03/05 ACM Transactions class
+(./url.sty
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-\trimheight=\dimen102
-\trimwidth=\dimen103
-\typeheight=\dimen104
-\typewidth=\dimen105
-\normaltextheight=\dimen106
-\blindfoliodrop=\dimen107
+
+Using ACM, TAP's option: 2010/05/18 by Aptara
+
+Using ACM, prodmode option: 2010/06/28 by Aptara
+\tempdimen=\dimen102
+\temptxtwd=\dimen103
+\normaltextheight=\dimen104
+\normaltextheight=\dimen105
+\blindfoliodrop=\dimen106
 \tempbox=\box26
-\tempdimen=\dimen108
-\normaltextheight=\dimen109
-\c@secnumbookdepth=\count79
-\c@theorem=\count80
-\c@strategy=\count81
-\c@property=\count82
-\c@proposition=\count83
-\c@exam=\count84
-\c@part=\count85
-\c@section=\count86
-\c@subsection=\count87
-\c@subsubsection=\count88
-\c@paragraph=\count89
-\c@figure=\count90
-\c@table=\count91
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@secnumbookdepth=\count84
+\enumdim=\dimen107
+\c@theorem=\count85
+\c@figure=\count86
+\c@table=\count87
 \belowcaptionskip=\skip41
 \tbbox=\box27
-\tabledim=\dimen110
-\@narrowfig=\dimen111
+\tabledim=\dimen108
+\@narrowfig=\dimen109
 \@nfigbox=\box28
 \@nfcapbox=\box29
 \@abstract=\box30
 \@terms=\box31
 \@keywords=\box32
-\bibindent=\dimen112
-LaTeX Info: Redefining \cal on input line 1053.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
-Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup5
-\symboldletters=\mathgroup6
-\symboldsymbols=\mathgroup7
-\symboldlasy=\mathgroup8
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
-LaTeX Info: Redefining \bm on input line 207.
+\@firstpg=\count88
+\@lastpg=\count89
+\@totalpg=\count90
+\bibindent=\dimen110
+LaTeX Info: Redefining \cal on input line 1435.
+(/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -90,183 +79,140 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count92
+\Gread@gobject=\count91
 ))
-\Gin@req@height=\dimen113
-\Gin@req@width=\dimen114
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 143.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+(./algorithm2e.sty
+Package: algorithm2e 2008/00/00 v3.10 algorithms environments
+\c@AlgoLine=\count92
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+********************************************************
+Package `algorithm2e' Release 4.01 -- december 14 2009 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (fiorio@lirmm.fr)
+********************************************************
+\skiptotal=\skip42
+\skiplinenumber=\skip43
+\skiprule=\skip44
+\skiphlne=\skip45
+\skiptext=\skip46
+\skiplength=\skip47
+\algomargin=\skip48
+\skipalgocfslide=\skip49
+\algowidth=\dimen113
+\inoutsize=\dimen114
+\inoutline=\dimen115
+\interspacetitleruled=\dimen116
+\interspacealgoruled=\dimen117
+\interspacetitleboxruled=\dimen118
+\algocf@inoutbox=\box33
+\algocf@inputbox=\box34
+\AlCapSkip=\skip50
+\AlCapHSkip=\skip51
+\algocf@nlbox=\box35
+\algocf@hangingbox=\box36
+\algocf@capbox=\box37
+\algoheightruledefault=\skip52
+\algoheightrule=\skip53
+\algotitleheightruledefault=\skip54
+\algotitleheightrule=\skip55
+\c@algocfline=\count93
+\c@algocfproc=\count94
+\c@algocf=\count95
+\algocf@algoframe=\box38
+\algocf@algobox=\box39
+) (./publication.aux)
+\openout1 = `publication.aux'.
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
-Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Try loading font information for OT1+pnc on input line 89.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pnc.fd
+File: ot1pnc.fd 2001/06/04 font definitions for OT1/pnc.
+)
+\bibhang=\skip56
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count96
+\scratchdimen=\dimen119
+\scratchbox=\box40
+\nofMPsegments=\count97
+\nofMParguments=\count98
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count99
+\MPscratchDim=\dimen120
+\MPnumerator=\count100
+\makeMPintoPDFobject=\count101
+\everyMPtoPDFconversion=\toks16
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
 
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
-Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
-Package hobsub Info: Skipping package `infwarerr' (already loaded).
-Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
 )
-Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
-Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
-)
-Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
-Package: xcolor-patch 2011/01/30 xcolor patch
-Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
-Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
-Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
-Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-)
-\@linkdim=\dimen115
-\Hy@linkcounter=\count93
-\Hy@pagecounter=\count94
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
-)
-\Hy@SavedSpaceFactor=\count95
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
-File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
-)
-Package hyperref Info: Option `hypertexnames' set `false' on input line 4319.
-Package hyperref Info: Hyper figures OFF on input line 4443.
-Package hyperref Info: Link nesting OFF on input line 4448.
-Package hyperref Info: Hyper index ON on input line 4451.
-Package hyperref Info: Plain pages OFF on input line 4458.
-Package hyperref Info: Backreferencing OFF on input line 4463.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count96
-LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen116
-\Fld@menulength=\count97
-\Field@Width=\dimen117
-\Fld@charsize=\dimen118
-Package hyperref Info: Hyper figures OFF on input line 6295.
-Package hyperref Info: Link nesting OFF on input line 6300.
-Package hyperref Info: Hyper index ON on input line 6303.
-Package hyperref Info: backreferencing OFF on input line 6310.
-Package hyperref Info: Link coloring OFF on input line 6315.
-Package hyperref Info: Link coloring with OCG OFF on input line 6320.
-Package hyperref Info: PDF/A mode OFF on input line 6325.
-LaTeX Info: Redefining \ref on input line 6365.
-LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count98
-\c@Item=\count99
-\c@Hfootnote=\count100
-)
-
-Package hyperref Message: Driver: hpdftex.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count101
-\c@bookmark@seq@number=\count102
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
-Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
-)
-\Hy@SectionHShift=\skip42
-)
-Package hyperref Info: Option `colorlinks' set `true' on input line 4.
-
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count103
-\float@exts=\toks15
-\float@box=\box33
-\@float@everytoks=\toks16
-\@floatcapt=\box34
-) (./publication.aux
-
-LaTeX Warning: Label `fig:trump_results' multiply defined.
-
-
-LaTeX Warning: Label `fig:trump_results' multiply defined.
-
-
-LaTeX Warning: Label `fig:trump_results' multiply defined.
-
-)
-\openout1 = `publication.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 29.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-\bibhang=\skip43
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
-\scratchdimen=\dimen119
-\scratchbox=\box35
-\nofMPsegments=\count105
-\nofMParguments=\count106
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count107
-\MPscratchDim=\dimen120
-\MPnumerator=\count108
-\makeMPintoPDFobject=\count109
-\everyMPtoPDFconversion=\toks18
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
@@ -276,549 +222,402 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box36
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package color Info: Driver file: pdftex.def on input line 143.
-)
-Package hyperref Info: Link coloring ON on input line 29.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
-)
-\c@section@level=\count110
-)
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
-
-(./publication.out) (./publication.out)
-\@outlinefile=\write3
-\openout3 = `publication.out'.
-
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 49.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
-File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
-)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 49.
+(Font)              <8> on input line 97.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 49.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 49.
+(Font)              <6> on input line 97.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 97.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 97.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 53.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 53.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 53.
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 53.
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 53.
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 53.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 53.
+LaTeX Font Info:    Try loading font information for OMS+pnc on input line 97.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspnc.fd
+File: omspnc.fd 
 )
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
+LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 97.
+Missing character: There is no ‚ in font pncr7t!
+Missing character: There is no Ä in font pncr7t!
+Missing character: There is no ô in font pncr7t!
+LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <8> not available
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 100.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 103.
 
-! Undefined control sequence.
-\doiline ->{\tt DOI:}http://dx.doi.org/\@acmDOI 
-                                                
-l.53 \end{bottomstuff}
-                      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 63.
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 63.
-! Illegal parameter number in definition of \Hy@tempa.
-<to be read again> 
-                   /
-l.63 ...s://twitter.yannistannier.io/#/dashboard}}
-                                                  , a microblogging platform...
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10> not available
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 108.
 
-! Illegal parameter number in definition of \Hy@tempa.
-<to be read again> 
-                   /
-l.63 ...s://twitter.yannistannier.io/#/dashboard}}
-                                                  , a microblogging platform...
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
 
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
+LaTeX Warning: Citation `Turk1996' on page 1 undefined on input line 108.
+
+
+LaTeX Warning: Citation `Jobard1997' on page 1 undefined on input line 108.
+
+
+LaTeX Warning: Citation `Cabral1993' on page 1 undefined on input line 109.
+
+
+LaTeX Warning: Citation `Laidlaw2001' on page 1 undefined on input line 109.
+
+
+LaTeX Warning: Citation `Ware2008' on page 1 undefined on input line 114.
+
+LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <12> not available
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 122.
+
+Overfull \vbox (73.96626pt too high) has occurred while \output is active []
+
+
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 Non-PDF special ignored!
 
-
 ]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
-
-
-LaTeX Warning: Citation `Marquez16' on page 2 undefined on input line 80.
-
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
-
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
-$[]$[][][][]$\OT1/ptm/m/n/8 https : / / github . com / mbenhamd / twitter-[]sen
-timent-[]analysis / tree / master /
+Underfull \hbox (badness 3557) in paragraph at lines 170--170
+[]\OT1/pnc/m/n/8 Objective and com-pu-ta-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
-$[]$[][][][]$\OT1/ptm/m/n/8 https : / / github . com / yannistannier / twitter-
-[]sentiment-[]analysis / tree / master /
+Underfull \hbox (badness 2080) in paragraph at lines 170--170
+\OT1/pnc/m/n/8 tional mea-sures for de-
  []
 
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
 
-LaTeX Warning: File `first_ten_languages.png' not found on input line 107.
-
-
-! Package pdftex.def Error: File `first_ten_languages.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.107 ...idth=\linewidth]{first_ten_languages.png}
-                                                  }
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Underfull \hbox (badness 1946) in paragraph at lines 170--170
+\OT1/pnc/m/n/8 scrib-ing the changes in
+ []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+\OT1/pnc/m/n/8 cru-cial im-age qual-ity
+ []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 111.
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 111.
+(Font)              <7> on input line 198.
 
-Overfull \vbox (0.633pt too high) has occurred while \output is active []
+Overfull \vbox (0.50241pt too high) has occurred while \output is active []
 
- [2]
 
-LaTeX Warning: Citation `Poddar16' on page 3 undefined on input line 116.
+[2]
 
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
+LaTeX Warning: Citation `Hubel1962' on page 3 undefined on input line 241.
 
-Overfull \vbox (0.633pt too high) has occurred while \output is active []
 
- [3]
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
-$[]$[][][][]$\OT1/ptm/m/n/8 https : / / github . com / yannistannier / twitter-
-[]sentiment-[]analysis / tree / master /
+LaTeX Warning: Citation `Hubel1968' on page 3 undefined on input line 241.
+
+
+LaTeX Warning: Citation `Li1998a' on page 3 undefined on input line 250.
+
+
+LaTeX Warning: Citation `Laidlaw2001' on page 3 undefined on input line 261.
+
+
+LaTeX Warning: Citation `Li1998a' on page 3 undefined on input line 268.
+
+
+LaTeX Warning: Citation `Laidlaw2001' on page 3 undefined on input line 273.
+
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+
+Overfull \vbox (0.57443pt too high) has occurred while \output is active []
+
+
+[3] <acmlarge-mouse.pdf, id=24, 151.56625pt x 134.5025pt>
+File: acmlarge-mouse.pdf Graphic file (type pdf)
+
+<use acmlarge-mouse.pdf>
+Package pdftex.def Info: acmlarge-mouse.pdf used on input line 280.
+(pdftex.def)             Requested size: 151.56587pt x 134.50215pt.
+
+
+LaTeX Warning: Citation `Daugman1985' on page 4 undefined on input line 301.
+
+
+LaTeX Warning: Citation `Hubel1962' on page 4 undefined on input line 308.
+
+
+LaTeX Warning: Citation `Hubel1968' on page 4 undefined on input line 308.
+
+
+LaTeX Warning: Citation `Field1993' on page 4 undefined on input line 324.
+
+File: acmlarge-mouse.pdf Graphic file (type pdf)
+<use acmlarge-mouse.pdf>
+Package pdftex.def Info: acmlarge-mouse.pdf used on input line 338.
+(pdftex.def)             Requested size: 151.56587pt x 134.50215pt.
+
+Overfull \vbox (0.50241pt too high) has occurred while \output is active []
+
+
+[4 <./acmlarge-mouse.pdf>]
+
+LaTeX Warning: Citation `Hubel1962' on page 5 undefined on input line 347.
+
+
+LaTeX Warning: Citation `Hubel1968' on page 5 undefined on input line 347.
+
+
+LaTeX Warning: Citation `Field1993' on page 5 undefined on input line 348.
+
+
+LaTeX Warning: Citation `Li1998a' on page 5 undefined on input line 352.
+
+
+LaTeX Warning: Citation `Laidlaw2001' on page 5 undefined on input line 379.
+
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+
+Overfull \vbox (0.57443pt too high) has occurred while \output is active []
+
+
+[5]
+
+LaTeX Warning: Citation `Li1998a' on page 6 undefined on input line 410.
+
+
+LaTeX Warning: Citation `Lund2001' on page 6 undefined on input line 414.
+
+
+LaTeX Warning: Citation `Laidlaw2001' on page 6 undefined on input line 415.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 434.
+LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <9> not available
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 449.
+
+Underfull \vbox (badness 4634) has occurred while \output is active []
+
+
+Overfull \vbox (0.50241pt too high) has occurred while \output is active []
+
+
+[6]
+
+LaTeX Warning: Citation `Pineo2008' on page 7 undefined on input line 478.
+
+
+LaTeX Warning: Citation `Laidlaw2001' on page 7 undefined on input line 493.
+
+
+LaTeX Warning: Citation `Turk1996' on page 7 undefined on input line 496.
+
+
+LaTeX Warning: Citation `Cabral1993' on page 7 undefined on input line 498.
+
+
+LaTeX Warning: Citation `Ware2008' on page 7 undefined on input line 501.
+
+
+LaTeX Warning: Citation `Jobard1997' on page 7 undefined on input line 503.
+
+
+LaTeX Warning: Citation `Fowler1989' on page 7 undefined on input line 505.
+
+File: acmlarge-mouse.pdf Graphic file (type pdf)
+<use acmlarge-mouse.pdf>
+Package pdftex.def Info: acmlarge-mouse.pdf used on input line 510.
+(pdftex.def)             Requested size: 151.56587pt x 134.50215pt.
+File: acmlarge-mouse.pdf Graphic file (type pdf)
+ <use acmlarge-mouse.pdf>
+Package pdftex.def Info: acmlarge-mouse.pdf used on input line 517.
+(pdftex.def)             Requested size: 151.56587pt x 134.50215pt.
+
+Overfull \hbox (3.39197pt too wide) in paragraph at lines 508--521
+[][]   [] 
  []
 
+File: acmlarge-mouse.pdf Graphic file (type pdf)
+<use acmlarge-mouse.pdf>
+Package pdftex.def Info: acmlarge-mouse.pdf used on input line 526.
+(pdftex.def)             Requested size: 151.56587pt x 134.50215pt.
+File: acmlarge-mouse.pdf Graphic file (type pdf)
+ <use acmlarge-mouse.pdf>
+Package pdftex.def Info: acmlarge-mouse.pdf used on input line 533.
+(pdftex.def)             Requested size: 151.56587pt x 134.50215pt.
 
-LaTeX Warning: File `table-web-db.png' not found on input line 184.
-
-
-! Package pdftex.def Error: File `table-web-db.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.184 ...phics[width=\linewidth]{table-web-db.png}
-                                                  }
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-LaTeX Warning: File `archive-schema.png' not found on input line 200.
-
-
-! Package pdftex.def Error: File `archive-schema.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.200 ...ics[width=\linewidth]{archive-schema.png}
-                                                  }
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (0.633pt too high) has occurred while \output is active []
-
- [4]
-Underfull \hbox (badness 10000) in paragraph at lines 212--212
-$[]$[][][][]$\OT1/ptm/m/n/8 https : / / github . com / yannistannier / twitter-
-[]sentiment-[]analysis / tree / master /
+Overfull \hbox (3.39197pt too wide) in paragraph at lines 524--537
+[][]   [] 
  []
 
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
 
-LaTeX Warning: File `real_stream-schema.png' not found on input line 217.
-
-
-! Package pdftex.def Error: File `real_stream-schema.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.217 ...width=\linewidth]{real_stream-schema.png}
-                                                  }
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \vbox (0.57443pt too high) has occurred while \output is active []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[7]
+
+LaTeX Warning: Citation `Laidlaw2001' on page 8 undefined on input line 600.
 
 
-
-LaTeX Warning: File `monthly_analysis_joy_sadness-exemple.png' not found on inp
-ut line 233.
+Overfull \vbox (0.50241pt too high) has occurred while \output is active []
 
 
-! Package pdftex.def Error: File `monthly_analysis_joy_sadness-exemple.png' not
- found.
+[8]
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.233 ...monthly_analysis_joy_sadness-exemple.png}
-                                                  }
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Citation `Li1998a' on page 9 undefined on input line 634.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Citation `Abril07' on page 9 undefined on input line 652.
 
 
-Overfull \vbox (0.633pt too high) has occurred while \output is active []
-
- [5]
-
-LaTeX Warning: File `Trump-results-analysis_exemple.png' not found on input lin
-e 248.
+LaTeX Warning: Citation `Cohen07' on page 9 undefined on input line 653.
 
 
-! Package pdftex.def Error: File `Trump-results-analysis_exemple.png' not found
+LaTeX Warning: Citation `JCohen96' on page 9 undefined on input line 653.
+
+
+LaTeX Warning: Citation `Kosiur01' on page 9 undefined on input line 654.
+
+
+LaTeX Warning: Citation `Harel79' on page 9 undefined on input line 655.
+
+
+LaTeX Warning: Citation `Editor00' on page 9 undefined on input line 655.
+
+
+LaTeX Warning: Citation `Editor00a' on page 9 undefined on input line 657.
+
+
+LaTeX Warning: Citation `Spector90' on page 9 undefined on input line 658.
+
+
+LaTeX Warning: Citation `Douglass98' on page 9 undefined on input line 659.
+
+
+LaTeX Warning: Citation `Knuth97' on page 9 undefined on input line 659.
+
+
+LaTeX Warning: Citation `Andler79' on page 9 undefined on input line 661.
+
+
+LaTeX Warning: Citation `Smith10' on page 9 undefined on input line 662.
+
+
+LaTeX Warning: Citation `VanGundy07' on page 9 undefined on input line 663.
+
+
+LaTeX Warning: Citation `Harel78' on page 9 undefined on input line 664.
+
+
+LaTeX Warning: Citation `Clarkson85' on page 9 undefined on input line 664.
+
+
+LaTeX Warning: Citation `anisi03' on page 9 undefined on input line 665.
+
+
+LaTeX Warning: Citation `Thornburg01' on page 9 undefined on input line 665.
+
+
+LaTeX Warning: Citation `Ablamowicz07' on page 9 undefined on input line 665.
+
+
+LaTeX Warning: Citation `Poker06' on page 9 undefined on input line 666.
+
+
+LaTeX Warning: Citation `Obama08' on page 9 undefined on input line 666.
+
+
+LaTeX Warning: Citation `Novak03' on page 9 undefined on input line 666.
+
+
+LaTeX Warning: Citation `Lee05' on page 9 undefined on input line 667.
+
+
+LaTeX Warning: Citation `JoeScientist001' on page 9 undefined on input line 667
 .
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.248 ...idth]{Trump-results-analysis_exemple.png}
-                                                  }
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+
+LaTeX Warning: Citation `rous08' on page 9 undefined on input line 668.
+
+
+LaTeX Warning: Citation `SaeediMEJ10' on page 9 undefined on input line 669.
+
+
+LaTeX Warning: Citation `SaeediJETC10' on page 9 undefined on input line 669.
+
+
+LaTeX Warning: Citation `Kirschmer:2010:AEI:1958016.1958018' on page 9 undefine
+d on input line 670.
+
+
+LaTeX Warning: Citation `MR781536' on page 9 undefined on input line 672.
+
+
+LaTeX Warning: Citation `MR781537' on page 9 undefined on input line 672.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+
+Overfull \vbox (0.57443pt too high) has occurred while \output is active []
 
 
-LaTeX Warning: File `retweeted_emotion_sentiment_trump-exemple.png' not found o
-n input line 261.
+[9] (./publication.bbl)
+Overfull \vbox (0.50241pt too high) has occurred while \output is active []
 
 
-! Package pdftex.def Error: File `retweeted_emotion_sentiment_trump-exemple.png
-' not found.
+[10]
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.261 ...eted_emotion_sentiment_trump-exemple.png}
-                                                  }
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \vbox (0.57443pt too high) has occurred while \output is active []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[11]
+Missing character: There is no ‚ in font pncr7t!
+Missing character: There is no Ä in font pncr7t!
+Missing character: There is no ô in font pncr7t!
+ [1
 
-
-Overfull \vbox (0.633pt too high) has occurred while \output is active []
-
- [6]
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-
-
-LaTeX Warning: File `final_plot_contradiction_analysis.png' not found on input 
-line 287.
-
-
-! Package pdftex.def Error: File `final_plot_contradiction_analysis.png' not fo
-und.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.287 ...h]{final_plot_contradiction_analysis.png}
-                                                  }
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Illegal parameter number in definition of \Hy@tempa.
-<to be read again> 
-                   /
-l.300 ...s://twitter.yannistannier.io/#/realtime}}
-                                                   such as geolocation of pe...
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-! Illegal parameter number in definition of \Hy@tempa.
-<to be read again> 
-                   /
-l.300 ...s://twitter.yannistannier.io/#/realtime}}
-                                                   such as geolocation of pe...
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-
-Overfull \vbox (0.633pt too high) has occurred while \output is active []
-
- [7]
-! Misplaced alignment tab character &.
-l.307 ... (Archivist) and Diana Yuan (Co-Founder &
-                                                   Vice President, Talent & ...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.307 ...an (Co-Founder & Vice President, Talent &
-                                                   Operations from Indico).
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-(./publication.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 52--59
-[]\OT1/ptm/m/n/8 Alexandros Bal-tas and An-dreas Kanavos and Athana-sios K.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--59
-\OT1/ptm/m/n/8 Tsaka-lidis. 2017.  An Apache Spark Im-ple-men-ta-tion for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--59
-\OT1/ptm/m/n/8 Sen-ti-ment Anal-y-sis on Twit-ter Data.  (Aug. 2017), 15--25.
- []
-
-
-Underfull \hbox (badness 2142) in paragraph at lines 100--110
-[]\OT1/ptm/m/n/8 Bhumika Gupta, Monika Negi, Kanika Vish-wakarma, Goldi Rawat,
- []
-
-
-Underfull \hbox (badness 1490) in paragraph at lines 100--110
-\OT1/ptm/m/n/8 and Priyanka Bad-hani. 2017.  Study of Twit-ter Sen-ti-ment Anal
--
- []
-
-
-Underfull \hbox (badness 3386) in paragraph at lines 100--110
-\OT1/ptm/m/n/8 y-sis us-ing Ma-chine Learn-ing Al-go-rithms on Python.  \OT1/pt
-m/m/it/8 In-ter-na-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 130--137
-[]\OT1/ptm/m/n/8 Nazan []Ozt[]urka and Serkan Ay-vazb. 2017.  Sen-ti-ment anal-
-y-
- []
-
-
-Underfull \hbox (badness 3838) in paragraph at lines 130--137
-\OT1/ptm/m/n/8 sis on Twit-ter: A text min-ing ap-proach to the Syr-ian refugee
-
- []
-
-
-Underfull \hbox (badness 5161) in paragraph at lines 130--137
-\OT1/ptm/m/n/8 cri-sis.  \OT1/ptm/m/it/8 Telem-at-ics and In-for-mat-ics \OT1/p
-tm/m/n/8 35 (Oct. 2017), 136--147.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--172
-[]\OT1/ptm/m/n/8 Walaa Med-hat and Ahmed Has-san and Hoda Ko-rashy. 2014.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--172
-\OT1/ptm/m/n/8 Sen-ti-ment anal-y-sis al-go-rithms and ap-pli-ca-tions: A sur-v
-ey.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--172
-\OT1/ptm/m/it/8 Ain Shams En-gi-neer-ing Jour-nal \OT1/ptm/m/n/8 5, 4 (2014), 1
-093--1113.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--184
-[]\OT1/ptm/m/n/8 Zhao Jian-qiang and Gui Xi-aolin. 2017.  Com-par-i-son Re-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--184
-\OT1/ptm/m/n/8 search on Text Pre-processing Meth-ods on Twit-ter Sen-ti-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--184
-\OT1/ptm/m/n/8 ment Anal-y-sis.  \OT1/ptm/m/it/8 IEEE Ac-cess \OT1/ptm/m/n/8 5 
-(Feb. 2017), 2870--2879.
- []
-
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 315.
-
-Overfull \vbox (0.633pt too high) has occurred while \output is active []
-
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 315.
-
-(./publication.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 315.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 315.
-Package rerunfilecheck Info: File `publication.out' has not changed.
-(rerunfilecheck)             Checksum: C9F55A83689F3C28BBD0E6759791B9A9;1291.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 315.
- ) 
+] (./publication.aux) ) 
 Here is how much of TeX's memory you used:
- 5799 strings out of 494910
- 84139 string characters out of 6179837
- 179952 words of memory out of 5000000
- 8940 multiletter control sequences out of 15000+600000
- 37960 words of font info for 93 fonts, out of 8000000 for 9000
+ 3271 strings out of 494910
+ 43397 string characters out of 6179837
+ 128149 words of memory out of 5000000
+ 6509 multiletter control sequences out of 15000+600000
+ 32172 words of font info for 66 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 34i,9n,28p,2491b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helveti
-c/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on publication.pdf (8 pages, 131225 bytes).
+ 38i,19n,26p,314b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.e
+nc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk
+/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb
+>
+Output written on publication.pdf (12 pages, 239995 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
- 67 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 129 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

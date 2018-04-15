@@ -1020,7 +1020,7 @@ the#1\endcsname{\@thmcounter{#1}}\global
 \def\@evenfoot{\tiny\@runningfoot\hfill\hbox{}}
 \def\sectionmark##1{}\def\subsectionmark##1{}}
 \def\@runningfoot{}
-\def\runningfoot{\def\@runningfoot{\@journalName, Vol.\ \@acmVolume, No.\ \@acmNumber, Article~\@acmArticle, Publication date: \monthWord{\@acmMonth}\ \@acmYear.}}
+\def\runningfoot{Travail d\'Etude et de Recherche}
 \def\@firstfoot{}
 \def\firstfoot{\def\@firstfoot{\@journalName, Vol.\ \@acmVolume, No.\ \@acmNumber, Article~\@acmArticle, Publication date: \monthWord{\@acmMonth}\ \@acmYear.}}%, Pages \thepage--\@endpage
 %
@@ -1038,24 +1038,6 @@ the#1\endcsname{\@thmcounter{#1}}\global
 \ps@headings \pagenumbering{arabic} \onecolumn 
 %
 \AtBeginDocument{%
-\@ifpackageloaded{natbib}{% Natbib loaded
-\renewcommand\bibsection{%
-\@ucheadfalse
-  \@startsection{subsection}{2}{\z@}{16pt plus 2pt minus 1pt}{2pt}{\sf}*{REFERENCES}
-}
-\bibpunct[, ]{[}{]}{;}{a}{}{,}
-\let\citeN\cite
-\let\cite\citep
-\let\citeANP\citeauthor
-\let\citeNN\citeyearpar
-\let\citeyearNP\citeyear
-\let\citeyear\citeyearpar
-\let\citeNP\citealt
-\def\shortcite#1{\citeyear{#1}}
-\DeclareRobustCommand\citeA
-   {\begingroup\NAT@swafalse\let\NAT@ctype\@ne\NAT@partrue\NAT@fullfalse\NAT@open\NAT@citetp}
-\newcommand\newblock{}
-}{% Natbib not loaded
 \let\@internalcite\cite
 \def\cite{\def\@citeseppen{-1000}%
     \def\@cite##1##2{[##1\if@tempswa , ##2\fi]}%
@@ -1182,22 +1164,6 @@ the#1\endcsname{\@thmcounter{#1}}\global
 \def\ps@titlepage{\let\@mkboth\@gobbletwo
 \def\@oddhead{}\def\@oddfoot{\hbox{}\hfill\firstfootsize\@firstfoot}%
 \def\@evenhead{}\def\@evenfoot{\firstfootsize\@firstfoot\hfill\hbox{}}}
-%
-\long\def\permission{\par\ifStBan
-Permission to make digital or hard copies of part or all of this work 
-for personal or classroom use is
-granted without fee provided that copies are not made or distributed for profit or commercial
-advantage and that copies show this notice on the first page or initial screen of a display
-along with the full citation. Copyrights for components of this work owned by others than ACM
-must be honored. Abstracting with credit is permitted. To copy otherwise, to republish,
-to post on servers, to redistribute to lists, or to use any component of this work in other
-works requires prior specific permission and\hspace*{.5pt}/or a fee. 
-Permissions may be requested from Publications Dept.,
-ACM, Inc., 2 Penn Plaza, Suite 701, New York, NY 10121-0701 USA, fax $+$1 (212) 869-0481, or
-permissions@acm.org.\fi\par
- \copyright\ \@acmYear\ 
- ACM \@permissionCodeOne/\@acmYear/\monthInf{\@acmMonth}-ART\@acmArticle\ \$15.00 \\ % Gerry - May 2012 10-to-15
-\doiline } % Gerry - March 2012
 %
 \def\@listI{\leftmargin\leftmargini
   \labelwidth\leftmargini\advance\labelwidth-\labelsep

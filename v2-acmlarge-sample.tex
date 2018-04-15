@@ -11,9 +11,15 @@
 %
 \documentclass[prodmode,acmtap]{acmlarge}
 
+% Metadata Information
+\acmVolume{2}
+\acmNumber{3}
+\acmArticle{1}
+\articleSeq{1}
+\acmYear{2010}
+\acmMonth{5}
 
-
-
+% Package to generate and customize Algorithm as per ACM style
 \usepackage[ruled]{algorithm2e}
 \SetAlFnt{\algofont}
 \SetAlCapFnt{\algofont}
@@ -22,33 +28,84 @@
 \IncMargin{-\parindent}
 \renewcommand{\algorithmcfname}{ALGORITHM}
 
-\markboth{M. Ben Hamdoune, Y. Tannier}{Factorisation matricielle non-n\'egative et classification d'images}
+% Page heads
+\markboth{D. Pineo, C. Ware and S. Fogarty}{Neural Modeling of Flow Rendering Effectiveness}
 
-\title{Factorisation matricielle non-n\'egative et classification d'images}
-\author{MOHAMED BEN HAMDOUNE et YANNIS TANNIER \affil{Universit\'e Paris-Descartes}
+% Title portion
+\title{Neural Modeling of Flow Rendering Effectiveness}
+\author{DANIEL PINEO and COLIN WARE \affil{University of New Hampshire}
+SEAN FOGARTY
+\affil{University of Illinois at Urbana-Champaign}
 }
+% NOTE! Affiliations placed here should be for the institution where the
+%       BULK of the research was done. If the author has gone to a new
+%       institution, before publication, the (above) affiliation should NOT be changed.
+%       The authors 'current' address may be given in the "Author's addresses:" block (below).
+%       So for example, Mr. Fogarty, the bulk of the research was done at UIUC, and he is
+%       currently affiliated with NASA.
 
 \begin{abstract}
-La classification automatique ou clustering consiste \`a partionner un ensemble d’objets (instances) d\'ecrits par un ensemble de variables en groupes (classes) homog\`enes. Avec l'av\`enement du Big Data et de la science des donn\'ees, le clustering est devenu une t\^ache encore tr\`es importante dans divers domaines dont l'imagerie. Les images sont des donn'\ees tr\`es r'\epandues notamment sur le web et les r\'eseaux sociaux (Instagram, Pinterest, Flickr, Google,etc). Le but sera de proposer un syst\'eme de classification pour des images provenant de divers bases de donn\'ees (photos, peintures,bandes dessinees, etc). La factorisation matricielle non n\'egative permet d'approximer une matrice de donn\'ees positive par le produit de deux matrices de dimensions inf\'erieures et positives. Par sa simplicit\'e, cette m\'ethode est devenue populaire et est utilis\'ee \`a la fois dans la r\'eduction de la dimension et \'egalement dans la classification automatique (clustering) en un nombre de classes k fix\'e par l'utilisateur. 
+It has been previously proposed that understanding the mechanisms of
+contour perception can provide a theory for why some flow-rendering
+methods allow for better judgments of advection pathways than others.
+In the present article, we develop this theory through a numerical
+model of the primary visual cortex of the brain (Visual Area 1) where
+contour enhancement is understood to occur according to most
+neurological theories. We apply a two-stage model of contour
+perception to various visual representations of flow fields evaluated
+using the advection task of Laidlaw et al. [2001]. In the first
+stage, contour {enhancement} is modeled based on Li's cortical model
+[Li 1998]. In the second stage, a model of streamline {tracing} is
+proposed, designed to support the advection task. We examine the
+predictive power of the model by comparing its performance to that of
+human subjects on the advection task with four different
+visualizations. The results show the same overall pattern for humans
+and the model. In both cases, the best performance was obtained with
+an aligned streamline-based method, which tied with a LIC-based
+method. Using a regular or jittered grid of arrows produced worse
+results. The model yields insights into the relative strengths of
+different flow visualization methods for the task of visualizing
+advection pathways.
 \end{abstract}
 
 \category{H.5.2}{Information Interfaces and Presentation}{User
 Interfaces}[Evaluation/\break methodology]
-
+\category{H.1.2}{Models and Principles}{User/Machine Systems}[Human Information Processing]
+\category{I.5.1}{Pattern\break Recognition}{Models}[Neural Nets]
 
 \terms{Human Factors}
-\keywords{Apprentissage Non Supervis\'e, Spherical K-means, K-means, R, NMF, PCA, Python, Scikit-Learn, Nimfa, Pillow, Jython}
+\keywords{Contour perception, flow visualization, perceptual theory, visual cortex, visualization}
 
-\acmformat{Mohamed Ben Hamdoune, Yannis Tannier. 2018. Factorisation matricielle non-n\'egative et classification d'images.}
+\acmformat{Daniel Pineo, Colin Ware, and Sean Fogarty. 2010. Neural Modeling of Flow Rendering Effectiveness.}
+% At a minimum you need to supply the author names, year and a title.
+% IMPORTANT:
+% Full first names whenever they are known, surname last, followed by a period.
+% In the case of two authors, 'and' is placed between them.
+% In the case of three or more authors, the serial comma is used, that is, all author names
+% except the last one but including the penultimate author's name are followed by a comma,
+% and then 'and' is placed before the final author's name.
+% If only first and middle initials are known, then each initial
+% is followed by a period and they are separated by a space.
+% The remaining information (journal title, volume, article number, date, etc.) is 'auto-generated'.
 
 \begin{document}
+
+\begin{bottomstuff}
+This work is supported by the Widget Corporation Grant \#312-001.\\
+Author's address: D. Pineo, Kingsbury Hall, 33 Academic Way, Durham,
+N.H. 03824; email: dspineo@comcast.net; Colin Ware, Jere A. Chase
+Ocean Engineering Lab, 24 Colovos Road, Durham, NH 03824; email: cware@ccom.unh.edu;
+Sean Fogarty, (Current address) NASA Ames Research Center, Moffett Field, California 94035.
+\end{bottomstuff}
+
 
 \maketitle
 
 % Head 1
 \section{Introduction}
 
-Many techniqdhsdfhsdfhsdfhrows, still the most common
+Many techniques for 2D flow visualization have been developed and
+applied. These include grids of little arrows, still the most common
 for many applications, equally spaced streamlines
 \cite{Turk1996,Jobard1997}, and line integral convolution (LIC)
 \cite{Cabral1993}. But which is best and why? \citeN{Laidlaw2001}
@@ -664,9 +721,18 @@ After some simple algebra, we obtain the final formulation:
 
 % Bibliography
 \bibliographystyle{ACM-Reference-Format-Journals}
-\bibliography{publication-bibfile}
+\bibliography{acmlarge-sample-bibfile}
+                                % Sample .bib file with references that match those in
+                                % the 'Specifications Document (V1.5)' as well containing
+                                % 'legacy' bibs and bibs with 'alternate codings'.
+                                % Gerry Murray - March 2012
+
+% History dates
+\received{February 2009}{July 2009}{October 2009}
+
 
 \elecappendix
+
 
 \section{Analysis of Invalid Trials}
 \label{invalid}
@@ -727,4 +793,4 @@ result in a larger number of failed trials for the NV$+$P condition
 than for any other, as observed.
 
 \end{document}
-
+% End of v2-acmlarge-sample.tex (March 2012) - Gerry Murray, ACM

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.2.15)  10 APR 2018 13:41
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.7)  14 APR 2018 07:17
+>>>>>>> 7cef59ad849f6926475c08c47e2596adf9d27184
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -44,8 +48,14 @@ Using ACM, prodmode option: 2010/06/28 by Aptara
 \@firstpg=\count88
 \@lastpg=\count89
 \@totalpg=\count90
+! Too many }'s.
+l.1110 }}
+         
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
 \bibindent=\dimen110
-LaTeX Info: Redefining \cal on input line 1435.
+LaTeX Info: Redefining \cal on input line 1401.
 (/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup4
@@ -141,27 +151,55 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \c@algocf=\count95
 \algocf@algoframe=\box38
 \algocf@algobox=\box39
-) (./publication.aux)
+)
+Missing character: There is no â in font cmr8!
+Missing character: There is no € in font cmr8!
+Missing character: There is no ™ in font cmr8!
+
+! Undefined control sequence.
+l.32 ... l'imagerie. Les images sont des donn'\ees
+                                                   tr\`es r'\epandues notamm...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.32 ...ages sont des donn'\ees tr\`es r'\epandues
+                                                   notamment sur le web et l...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(./publication.aux)
 \openout1 = `publication.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Try loading font information for OT1+pnc on input line 89.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Try loading font information for OT1+pnc on input line 44.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pnc.fd
 File: ot1pnc.fd 2001/06/04 font definitions for OT1/pnc.
 )
 \bibhang=\skip56
+<<<<<<< HEAD
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+=======
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+>>>>>>> 7cef59ad849f6926475c08c47e2596adf9d27184
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count96
 \scratchdimen=\dimen119
@@ -223,180 +261,273 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 97.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 97.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 97.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 97.
+! You can't use a prefix with `the letter T'.
+<to be read again> 
+                   T
+l.46 \maketitle
+               
+I'll pretend you didn't say \long or \outer or \global or \protected.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-LaTeX Font Info:    Try loading font information for OMS+pnc on input line 97.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspnc.fd
-File: omspnc.fd 
-)
-LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 97.
-Missing character: There is no â in font pncr7t!
-Missing character: There is no € in font pncr7t!
-Missing character: There is no ™ in font pncr7t!
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <8> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 100.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 103.
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 46.
+! Undefined control sequence.
+\formatline ...\@acmNumber , Article~\@acmArticle 
+                                                  \ (\monthWord {\@acmMonth ...
+l.46 \maketitle
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 49.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 108.
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 53.
 
 
-LaTeX Warning: Citation `Turk1996' on page 1 undefined on input line 108.
+LaTeX Warning: Citation `Turk1996' on page 1 undefined on input line 53.
 
 
-LaTeX Warning: Citation `Jobard1997' on page 1 undefined on input line 108.
+LaTeX Warning: Citation `Jobard1997' on page 1 undefined on input line 53.
 
 
-LaTeX Warning: Citation `Cabral1993' on page 1 undefined on input line 109.
+LaTeX Warning: Citation `Cabral1993' on page 1 undefined on input line 54.
 
 
-LaTeX Warning: Citation `Laidlaw2001' on page 1 undefined on input line 109.
+LaTeX Warning: Citation `Laidlaw2001' on page 1 undefined on input line 54.
 
 
-LaTeX Warning: Citation `Ware2008' on page 1 undefined on input line 114.
+LaTeX Warning: Citation `Ware2008' on page 1 undefined on input line 59.
+
+
+Overfull \hbox (1.77458pt too wide) in paragraph at lines 51--67
+\OT1/pnc/m/n/10 Many tech-niqdhs-dfhs-dfhs-dfhrows, still the most com-mon for 
+many ap-pli-ca-tions, equally spaced stream-
+ []
+
+
+Underfull \vbox (badness 2772) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <12> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 122.
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 92.
+
+! Undefined control sequence.
+<argument> ...}\selectfont \bfseries \@acmArticle 
+                                                  
+l.92 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 Overfull \vbox (73.96626pt too high) has occurred while \output is active []
 
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+! Undefined control sequence.
+\@firstfoot ...\@acmNumber , Article~\@acmArticle 
+                                                  , Publication date: \month...
+l.92 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[1
 Non-PDF special ignored!
 
-]
-Underfull \hbox (badness 3557) in paragraph at lines 170--170
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 115.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 115.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 115.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 115.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+Underfull \hbox (badness 3557) in paragraph at lines 115--115
 []\OT1/pnc/m/n/8 Objective and com-pu-ta-
  []
 
 
-Underfull \hbox (badness 2080) in paragraph at lines 170--170
+Underfull \hbox (badness 2080) in paragraph at lines 115--115
 \OT1/pnc/m/n/8 tional mea-sures for de-
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 170--170
+Underfull \hbox (badness 1946) in paragraph at lines 115--115
 \OT1/pnc/m/n/8 scrib-ing the changes in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--170
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
 \OT1/pnc/m/n/8 cru-cial im-age qual-ity
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 198.
+(Font)              <7> on input line 151.
+! Undefined control sequence.
+\@thehead ->\small \sf \ifStBan \@acmArticle 
+                                             :\fi \mypage \hskip 17pt{\bull ...
+l.158 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 Overfull \vbox (0.50241pt too high) has occurred while \output is active []
 
 
 [2]
 
-LaTeX Warning: Citation `Hubel1962' on page 3 undefined on input line 241.
+LaTeX Warning: Citation `Hubel1962' on page 3 undefined on input line 186.
 
 
-LaTeX Warning: Citation `Hubel1968' on page 3 undefined on input line 241.
+LaTeX Warning: Citation `Hubel1968' on page 3 undefined on input line 186.
 
 
-LaTeX Warning: Citation `Li1998a' on page 3 undefined on input line 250.
+LaTeX Warning: Citation `Li1998a' on page 3 undefined on input line 195.
 
 
-LaTeX Warning: Citation `Laidlaw2001' on page 3 undefined on input line 261.
+LaTeX Warning: Citation `Laidlaw2001' on page 3 undefined on input line 206.
 
 
-LaTeX Warning: Citation `Li1998a' on page 3 undefined on input line 268.
+LaTeX Warning: Citation `Li1998a' on page 3 undefined on input line 213.
 
 
-LaTeX Warning: Citation `Laidlaw2001' on page 3 undefined on input line 273.
+LaTeX Warning: Citation `Laidlaw2001' on page 3 undefined on input line 218.
 
-Missing character: There is no â in font phvr7t!
-Missing character: There is no € in font phvr7t!
-Missing character: There is no ™ in font phvr7t!
-
-Overfull \vbox (0.57443pt too high) has occurred while \output is active []
-
-
-[3] <acmlarge-mouse.pdf, id=24, 151.56625pt x 134.5025pt>
+<acmlarge-mouse.pdf, id=18, 151.56625pt x 134.5025pt>
 File: acmlarge-mouse.pdf Graphic file (type pdf)
-
-<use acmlarge-mouse.pdf>
-Package pdftex.def Info: acmlarge-mouse.pdf used on input line 280.
+ <use acmlarge-mouse.pdf>
+Package pdftex.def Info: acmlarge-mouse.pdf used on input line 225.
 (pdftex.def)             Requested size: 151.56587pt x 134.50215pt.
 
 
-LaTeX Warning: Citation `Daugman1985' on page 4 undefined on input line 301.
+LaTeX Warning: Citation `Daugman1985' on page 3 undefined on input line 246.
+
+! Undefined control sequence.
+\@thehead ...ll }\hskip 17pt\ifStBan \@acmArticle 
+                                                  :\fi \mypage 
+l.251 \end{equation}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `Hubel1962' on page 4 undefined on input line 308.
+Overfull \vbox (0.77242pt too high) has occurred while \output is active []
 
 
-LaTeX Warning: Citation `Hubel1968' on page 4 undefined on input line 308.
+[3]
+
+LaTeX Warning: Citation `Hubel1962' on page 4 undefined on input line 253.
 
 
-LaTeX Warning: Citation `Field1993' on page 4 undefined on input line 324.
+LaTeX Warning: Citation `Hubel1968' on page 4 undefined on input line 253.
+
+
+LaTeX Warning: Citation `Field1993' on page 4 undefined on input line 269.
 
 File: acmlarge-mouse.pdf Graphic file (type pdf)
 <use acmlarge-mouse.pdf>
-Package pdftex.def Info: acmlarge-mouse.pdf used on input line 338.
+Package pdftex.def Info: acmlarge-mouse.pdf used on input line 283.
 (pdftex.def)             Requested size: 151.56587pt x 134.50215pt.
+
+
+LaTeX Warning: Citation `Hubel1962' on page 4 undefined on input line 292.
+
+
+LaTeX Warning: Citation `Hubel1968' on page 4 undefined on input line 292.
+
+
+LaTeX Warning: Citation `Field1993' on page 4 undefined on input line 293.
+
+
+LaTeX Warning: Citation `Li1998a' on page 4 undefined on input line 297.
+
+! Undefined control sequence.
+\@thehead ->\small \sf \ifStBan \@acmArticle 
+                                             :\fi \mypage \hskip 17pt{\bull ...
+l.316 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 Overfull \vbox (0.50241pt too high) has occurred while \output is active []
 
 
 [4 <./acmlarge-mouse.pdf>]
 
-LaTeX Warning: Citation `Hubel1962' on page 5 undefined on input line 347.
+LaTeX Warning: Citation `Laidlaw2001' on page 5 undefined on input line 324.
 
 
-LaTeX Warning: Citation `Hubel1968' on page 5 undefined on input line 347.
+LaTeX Warning: Citation `Li1998a' on page 5 undefined on input line 355.
 
 
-LaTeX Warning: Citation `Field1993' on page 5 undefined on input line 348.
+LaTeX Warning: Citation `Lund2001' on page 5 undefined on input line 359.
 
 
-LaTeX Warning: Citation `Li1998a' on page 5 undefined on input line 352.
+LaTeX Warning: Citation `Laidlaw2001' on page 5 undefined on input line 360.
 
 
-LaTeX Warning: Citation `Laidlaw2001' on page 5 undefined on input line 379.
+Underfull \vbox (badness 2096) has occurred while \output is active []
 
-Missing character: There is no â in font phvr7t!
-Missing character: There is no € in font phvr7t!
-Missing character: There is no ™ in font phvr7t!
 
-Overfull \vbox (0.57443pt too high) has occurred while \output is active []
+! Undefined control sequence.
+\@thehead ...ll }\hskip 17pt\ifStBan \@acmArticle 
+                                                  :\fi \mypage 
+l.366 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \vbox (0.77242pt too high) has occurred while \output is active []
 
 
 [5]
-
-LaTeX Warning: Citation `Li1998a' on page 6 undefined on input line 410.
-
-
-LaTeX Warning: Citation `Lund2001' on page 6 undefined on input line 414.
-
-
-LaTeX Warning: Citation `Laidlaw2001' on page 6 undefined on input line 415.
-
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 434.
+(Font)              <9> on input line 379.
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <9> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 449.
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 394.
 
-Underfull \vbox (badness 4634) has occurred while \output is active []
+
+LaTeX Warning: Citation `Pineo2008' on page 6 undefined on input line 423.
+
+! Undefined control sequence.
+\@thehead ->\small \sf \ifStBan \@acmArticle 
+                                             :\fi \mypage \hskip 17pt{\bull ...
+l.434 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
 Overfull \vbox (0.50241pt too high) has occurred while \output is active []
@@ -404,62 +535,78 @@ Overfull \vbox (0.50241pt too high) has occurred while \output is active []
 
 [6]
 
-LaTeX Warning: Citation `Pineo2008' on page 7 undefined on input line 478.
+LaTeX Warning: Citation `Laidlaw2001' on page 7 undefined on input line 438.
 
 
-LaTeX Warning: Citation `Laidlaw2001' on page 7 undefined on input line 493.
+LaTeX Warning: Citation `Turk1996' on page 7 undefined on input line 441.
 
 
-LaTeX Warning: Citation `Turk1996' on page 7 undefined on input line 496.
+LaTeX Warning: Citation `Cabral1993' on page 7 undefined on input line 443.
 
 
-LaTeX Warning: Citation `Cabral1993' on page 7 undefined on input line 498.
+LaTeX Warning: Citation `Ware2008' on page 7 undefined on input line 446.
 
 
-LaTeX Warning: Citation `Ware2008' on page 7 undefined on input line 501.
+LaTeX Warning: Citation `Jobard1997' on page 7 undefined on input line 448.
 
 
-LaTeX Warning: Citation `Jobard1997' on page 7 undefined on input line 503.
-
-
-LaTeX Warning: Citation `Fowler1989' on page 7 undefined on input line 505.
+LaTeX Warning: Citation `Fowler1989' on page 7 undefined on input line 450.
 
 File: acmlarge-mouse.pdf Graphic file (type pdf)
 <use acmlarge-mouse.pdf>
-Package pdftex.def Info: acmlarge-mouse.pdf used on input line 510.
+Package pdftex.def Info: acmlarge-mouse.pdf used on input line 455.
 (pdftex.def)             Requested size: 151.56587pt x 134.50215pt.
 File: acmlarge-mouse.pdf Graphic file (type pdf)
  <use acmlarge-mouse.pdf>
-Package pdftex.def Info: acmlarge-mouse.pdf used on input line 517.
+Package pdftex.def Info: acmlarge-mouse.pdf used on input line 462.
 (pdftex.def)             Requested size: 151.56587pt x 134.50215pt.
 
-Overfull \hbox (3.39197pt too wide) in paragraph at lines 508--521
+Overfull \hbox (3.39197pt too wide) in paragraph at lines 453--466
 [][]   [] 
  []
 
 File: acmlarge-mouse.pdf Graphic file (type pdf)
 <use acmlarge-mouse.pdf>
-Package pdftex.def Info: acmlarge-mouse.pdf used on input line 526.
+Package pdftex.def Info: acmlarge-mouse.pdf used on input line 471.
 (pdftex.def)             Requested size: 151.56587pt x 134.50215pt.
 File: acmlarge-mouse.pdf Graphic file (type pdf)
  <use acmlarge-mouse.pdf>
-Package pdftex.def Info: acmlarge-mouse.pdf used on input line 533.
+Package pdftex.def Info: acmlarge-mouse.pdf used on input line 478.
 (pdftex.def)             Requested size: 151.56587pt x 134.50215pt.
 
-Overfull \hbox (3.39197pt too wide) in paragraph at lines 524--537
+Overfull \hbox (3.39197pt too wide) in paragraph at lines 469--482
 [][]   [] 
  []
 
-Missing character: There is no â in font phvr7t!
-Missing character: There is no € in font phvr7t!
-Missing character: There is no ™ in font phvr7t!
+! Undefined control sequence.
+\@thehead ...ll }\hskip 17pt\ifStBan \@acmArticle 
+                                                  :\fi \mypage 
+l.499 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \vbox (0.57443pt too high) has occurred while \output is active []
+
+Overfull \vbox (0.77242pt too high) has occurred while \output is active []
 
 
 [7]
 
-LaTeX Warning: Citation `Laidlaw2001' on page 8 undefined on input line 600.
+LaTeX Warning: Citation `Laidlaw2001' on page 8 undefined on input line 545.
+
+! Undefined control sequence.
+\@thehead ->\small \sf \ifStBan \@acmArticle 
+                                             :\fi \mypage \hskip 17pt{\bull ...
+l.571 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
 Overfull \vbox (0.50241pt too high) has occurred while \output is active []
@@ -467,105 +614,110 @@ Overfull \vbox (0.50241pt too high) has occurred while \output is active []
 
 [8]
 
-LaTeX Warning: Citation `Li1998a' on page 9 undefined on input line 634.
+LaTeX Warning: Citation `Li1998a' on page 9 undefined on input line 579.
 
 
-LaTeX Warning: Citation `Abril07' on page 9 undefined on input line 652.
+LaTeX Warning: Citation `Abril07' on page 9 undefined on input line 597.
 
 
-LaTeX Warning: Citation `Cohen07' on page 9 undefined on input line 653.
+LaTeX Warning: Citation `Cohen07' on page 9 undefined on input line 598.
 
 
-LaTeX Warning: Citation `JCohen96' on page 9 undefined on input line 653.
+LaTeX Warning: Citation `JCohen96' on page 9 undefined on input line 598.
 
 
-LaTeX Warning: Citation `Kosiur01' on page 9 undefined on input line 654.
+LaTeX Warning: Citation `Kosiur01' on page 9 undefined on input line 599.
 
 
-LaTeX Warning: Citation `Harel79' on page 9 undefined on input line 655.
+LaTeX Warning: Citation `Harel79' on page 9 undefined on input line 600.
 
 
-LaTeX Warning: Citation `Editor00' on page 9 undefined on input line 655.
+LaTeX Warning: Citation `Editor00' on page 9 undefined on input line 600.
 
 
-LaTeX Warning: Citation `Editor00a' on page 9 undefined on input line 657.
+LaTeX Warning: Citation `Editor00a' on page 9 undefined on input line 602.
 
 
-LaTeX Warning: Citation `Spector90' on page 9 undefined on input line 658.
+LaTeX Warning: Citation `Spector90' on page 9 undefined on input line 603.
 
 
-LaTeX Warning: Citation `Douglass98' on page 9 undefined on input line 659.
+LaTeX Warning: Citation `Douglass98' on page 9 undefined on input line 604.
 
 
-LaTeX Warning: Citation `Knuth97' on page 9 undefined on input line 659.
+LaTeX Warning: Citation `Knuth97' on page 9 undefined on input line 604.
 
 
-LaTeX Warning: Citation `Andler79' on page 9 undefined on input line 661.
+LaTeX Warning: Citation `Andler79' on page 9 undefined on input line 606.
 
 
-LaTeX Warning: Citation `Smith10' on page 9 undefined on input line 662.
+LaTeX Warning: Citation `Smith10' on page 9 undefined on input line 607.
 
 
-LaTeX Warning: Citation `VanGundy07' on page 9 undefined on input line 663.
+LaTeX Warning: Citation `VanGundy07' on page 9 undefined on input line 608.
 
 
-LaTeX Warning: Citation `Harel78' on page 9 undefined on input line 664.
+LaTeX Warning: Citation `Harel78' on page 9 undefined on input line 609.
 
 
-LaTeX Warning: Citation `Clarkson85' on page 9 undefined on input line 664.
+LaTeX Warning: Citation `Clarkson85' on page 9 undefined on input line 609.
 
 
-LaTeX Warning: Citation `anisi03' on page 9 undefined on input line 665.
+LaTeX Warning: Citation `anisi03' on page 9 undefined on input line 610.
 
 
-LaTeX Warning: Citation `Thornburg01' on page 9 undefined on input line 665.
+LaTeX Warning: Citation `Thornburg01' on page 9 undefined on input line 610.
 
 
-LaTeX Warning: Citation `Ablamowicz07' on page 9 undefined on input line 665.
+LaTeX Warning: Citation `Ablamowicz07' on page 9 undefined on input line 610.
 
 
-LaTeX Warning: Citation `Poker06' on page 9 undefined on input line 666.
+LaTeX Warning: Citation `Poker06' on page 9 undefined on input line 611.
 
 
-LaTeX Warning: Citation `Obama08' on page 9 undefined on input line 666.
+LaTeX Warning: Citation `Obama08' on page 9 undefined on input line 611.
 
 
-LaTeX Warning: Citation `Novak03' on page 9 undefined on input line 666.
+LaTeX Warning: Citation `Novak03' on page 9 undefined on input line 611.
 
 
-LaTeX Warning: Citation `Lee05' on page 9 undefined on input line 667.
+LaTeX Warning: Citation `Lee05' on page 9 undefined on input line 612.
 
 
-LaTeX Warning: Citation `JoeScientist001' on page 9 undefined on input line 667
+LaTeX Warning: Citation `JoeScientist001' on page 9 undefined on input line 612
 .
 
 
-LaTeX Warning: Citation `rous08' on page 9 undefined on input line 668.
+LaTeX Warning: Citation `rous08' on page 9 undefined on input line 613.
 
 
-LaTeX Warning: Citation `SaeediMEJ10' on page 9 undefined on input line 669.
+LaTeX Warning: Citation `SaeediMEJ10' on page 9 undefined on input line 614.
 
 
-LaTeX Warning: Citation `SaeediJETC10' on page 9 undefined on input line 669.
+LaTeX Warning: Citation `SaeediJETC10' on page 9 undefined on input line 614.
 
 
 LaTeX Warning: Citation `Kirschmer:2010:AEI:1958016.1958018' on page 9 undefine
-d on input line 670.
+d on input line 615.
 
 
-LaTeX Warning: Citation `MR781536' on page 9 undefined on input line 672.
+LaTeX Warning: Citation `MR781536' on page 9 undefined on input line 617.
 
 
-LaTeX Warning: Citation `MR781537' on page 9 undefined on input line 672.
+LaTeX Warning: Citation `MR781537' on page 9 undefined on input line 617.
+
+! Undefined control sequence.
+\@thehead ...ll }\hskip 17pt\ifStBan \@acmArticle 
+                                                  :\fi \mypage 
+l.652 \end{equation}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Missing character: There is no â in font phvr7t!
-Missing character: There is no € in font phvr7t!
-Missing character: There is no ™ in font phvr7t!
-
-Overfull \vbox (0.57443pt too high) has occurred while \output is active []
+Overfull \vbox (0.77242pt too high) has occurred while \output is active []
 
 
 [9] (./publication.bbl)
@@ -573,21 +725,52 @@ Overfull \vbox (0.50241pt too high) has occurred while \output is active []
 
 
 [10]
-Missing character: There is no â in font phvr7t!
-Missing character: There is no € in font phvr7t!
-Missing character: There is no ™ in font phvr7t!
+! You can't use a prefix with `the letter T'.
+<to be read again> 
+                   T
+l.669 \elecappendix
+                   
+I'll pretend you didn't say \long or \outer or \global or \protected.
 
-Overfull \vbox (0.57443pt too high) has occurred while \output is active []
+LaTeX Font Info:    Try loading font information for OMS+pnc on input line 669.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspnc.fd
+File: omspnc.fd 
+)
+LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 669.
+
+! Undefined control sequence.
+\endbottomstuff ... {\@acmMonth }-ART\@acmArticle 
+                                                  \ \$15.00 \\ \doiline \end...
+l.669 \elecappendix
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@firstfoot ...\@acmNumber , Article~\@acmArticle 
+                                                  , Publication date: \month...
+l.729 \end{document}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[1
+
+]
+Overfull \vbox (0.50241pt too high) has occurred while \output is active []
 
 
-[11]
-Missing character: There is no â in font pncr7t!
-Missing character: There is no € in font pncr7t!
-Missing character: There is no ™ in font pncr7t!
- [1
-
-] (./publication.aux) ) 
+[2] (./publication.aux) ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  3275 strings out of 494902
  43528 string characters out of 6179891
  128292 words of memory out of 5000000
@@ -616,6 +799,36 @@ urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk
 /uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb
 >
 Output written on publication.pdf (12 pages, 239995 bytes).
+=======
+ 3261 strings out of 494910
+ 43295 string characters out of 6179837
+ 125724 words of memory out of 5000000
+ 6500 multiletter control sequences out of 15000+600000
+ 31391 words of font info for 65 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 38i,19n,26p,1069b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r
+.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrs
+bk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.p
+fb>
+Output written on publication.pdf (12 pages, 235428 bytes).
+>>>>>>> 7cef59ad849f6926475c08c47e2596adf9d27184
 PDF statistics:
  129 PDF objects out of 1000 (max. 8388607)
  92 compressed objects within 1 object stream
